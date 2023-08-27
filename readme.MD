@@ -18,8 +18,23 @@ O objetivo principal do projeto é criar uma plataforma que facilite a adoção 
 
 ## Impacto Acadêmico e Parcerias
 
-A colaboração entre os grupos acadêmicos de Ciência da Computação e Medicina Veterinária é fundamental para o sucesso do projeto. A equipe de Ciência da Computação ficará responsável pelo desenvolvimento da plataforma e da interface do usuário, enquanto a equipe de Medicina Veterinária contribuirá com seu conhecimento especializado para elaborar as perguntas do quizz e fornecer conteúdo educacional relevante.
+A colaboração entre os grupos acadêmicos de Ciência da Computação e Medicina Veterinária é fundamental para o sucesso do projeto. A equipe de Ciência da Computação ficará responsável pelo desenvolvimento da plataforma e da interface do usuário, enquanto a equipe de Medicina Veterinária contribuirá com seu conhecimento especializado para elaborar as perguntas do quizz e fornecer conteúdo educacional relevante e aprimoramento dos demais requisitos e necessidades do projeto junto a equipe de ciencias da computação.
 
 ## Conclusão
 
 O projeto _"Encontre seu Pet Amigão Online"_ é uma iniciativa inovadora que visa unir pessoas interessadas em adotar animais de estimação de forma responsável e consciente. Através da colaboração entre os grupos acadêmicos, espera-se criar uma ferramenta eficaz para promover a adoção de animais e disseminar informações cruciais sobre o cuidado animal. Com isso, o projeto não apenas enriquecerá a vida de muitos animais e adotantes, mas também proporcionará uma experiência de aprendizado valiosa para a comunidade em geral.
+
+## Equipe ciencias da computação
+
+> Marco Antônio
+> Gustavo Henrique
+> Davi Wendell
+> Alexsandro Fernandes
+> Beatriz Silva
+> Jean Arthur
+> Diosne Marlon
+> Kauan Leandro
+> Manoel Victor
+> Renan Tavares
+
+- [ ] \(Optional) Open a followup issue
