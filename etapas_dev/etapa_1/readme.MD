@@ -24,3 +24,16 @@
   - as telas devem ser responsivas e minimalistas
   - devem ser de facil aprendizagem
   - e de facil incremento de novas atualizações
+
+**4.Levantes necessario para estruturas**
+
+- necessidade de hospedagem
+  Para isso utilizaremos a hospedagem gratuita e limitada da Netlify que por usas regras permitem o uso da versão gratuita em meios academicos
+
+  - aplicação hosteada em node js
+
+- necessidades
+  - Necessario aplicação de persistencia de dados
+  - Se é necessario API
+    - Se necessario aplicação gratuita
+    - Se necessario aplicação em node js interno em processo
