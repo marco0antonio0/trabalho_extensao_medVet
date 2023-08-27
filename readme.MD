@@ -1,5 +1,7 @@
 # Projeto de Doação de Animais: Encontre seu Pet Amigão Online
 
+![img](/images/topBar.png)
+
 ## Introdução
 
 No mundo contemporâneo, a tecnologia tem desempenhado um papel crucial na conexão de pessoas e na resolução de desafios sociais. Nesse contexto, surge o projeto _"Encontre seu Pet Amigão Online"_, uma iniciativa inovadora que busca unir pessoas em busca de um novo amigo de quatro patas e promover o bem-estar animal. Desenvolvido em parceria entre o grupo acadêmico de extensão de Ciência da Computação e o grupo acadêmico de Medicina Veterinária da **UNAMA Parque Shopping**, o projeto visa facilitar o processo de adoção de animais por meio de uma plataforma digital interativa.
