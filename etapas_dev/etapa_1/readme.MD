@@ -10,4 +10,4 @@
 
 **2.Levantes necessario para modelagemd de processos**
 
-![img](/estudo_de_casos/images/Captura%20de%20tela%202023-08-27%20123401.png)
+![img](/images/Captura%20de%20tela%202023-08-27%20123401.png)
