@@ -7,6 +7,8 @@
 * Identificação das principais funcionalidades do site, como a lista de animais, o quizz e o blog.
 * Levantamento de requisitos de responsividade, considerando a adaptação do layout para diferentes dispositivos.
 
+[![img](/images/BTN_clique_1.png)](/etapas_dev/etapa_1/readme.MD)
+
 **2. Planejamento Inicial:**
 
 - [ ] feito
@@ -14,12 +16,16 @@
 * Criação de um Product Backlog com todas as funcionalidades planejadas.
 * Divisão do projeto em sprints (iterações), cada uma com uma duração específica.
 
+[![img](/images/BTN_clique_1.png)](/etapas_dev/etapa_2/readme.MD)
+
 **3. Prototipação de Baixa Fidelidade:**
 
 - [ ] feito
 
 * Criação de esboços e wireframes das páginas principais do site, considerando as versões desktop e mobile.
 * Validação inicial da estrutura e layout das páginas.
+
+[![img](/images/BTN_clique_1.png)](/etapas_dev/etapa_3/readme.MD)
 
 **4. Sprint 1: Configuração do Ambiente e Layout Inicial**
 
@@ -29,6 +35,8 @@
 * Implementação do layout inicial das páginas principais.
 * Validação do funcionamento responsivo em dispositivos diversos.
 
+[![img](/images/BTN_clique_1.png)](/etapas_dev/etapa_4/readme.MD)
+
 **5. Sprint 2: Lista de Animais e Quizz**
 
 - [ ] feito
@@ -36,6 +44,8 @@
 * Desenvolvimento da lista horizontal de fotos de animais disponíveis.
 * Implementação do quizz com as perguntas de seleção.
 * Criação de protótipo interativo para validação das funcionalidades.
+
+[![img](/images/BTN_clique_1.png)](/etapas_dev/etapa_5/readme.MD)
 
 **6. Sprint 3: Blog e Integração com Contato**
 
