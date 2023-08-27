@@ -26,24 +26,22 @@ O projeto _"Encontre seu Pet Amigão Online"_ é uma iniciativa inovadora que vi
 
 ## Equipe ciencias da computação
 
-> Marco Antônio
+- Marco Antônio
 
-> Gustavo Henrique
+- Gustavo Henrique
 
-> Davi Wendell
+- Davi Wendell
 
-> Alexsandro Fernandes
+- Alexsandro Fernandes
 
-> Beatriz Silva
+- Beatriz Silva
 
-> Jean Arthur
+- Jean Arthur
 
-> Diosne Marlon
+- Diosne Marlon
 
-> Kauan Leandro
+- Kauan Leandro
 
-> Manoel Victor
+- Manoel Victor
 
-> Renan Tavares
-
-- [ ] \(Optional) Open a followup issue
+- Renan Tavares
