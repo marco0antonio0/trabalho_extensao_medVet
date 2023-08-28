@@ -1,5 +1,12 @@
 # Desenvolvimento do Site de Adoção de Animais - Metodologia Ágil e Prototipação
 
+**# atualizações futuras**
+a. lista de favoritos
+b.
+c.
+
+#
+
 **1. Definição de Requisitos:**
 
 - [x] feito
@@ -49,7 +56,7 @@
 
 **6. Sprint 3: Blog e Integração com Contato**
 
-- [ ] feito
+- [x] em andamento
 
 * Desenvolvimento da seção de blog com informações sobre cuidados com animais.
 * Integração da funcionalidade de contato com a instituição responsável pelos animais.
