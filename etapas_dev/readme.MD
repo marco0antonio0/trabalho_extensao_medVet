@@ -2,7 +2,7 @@
 
 **1. Definição de Requisitos:**
 
-- [ ] feito
+- [x] feito
 
 * Identificação das principais funcionalidades do site, como a lista de animais, o quizz e o blog.
 * Levantamento de requisitos de responsividade, considerando a adaptação do layout para diferentes dispositivos.
@@ -11,7 +11,7 @@
 
 **2. Planejamento Inicial:**
 
-- [ ] feito
+- [x] feito
 
 * Criação de um Product Backlog com todas as funcionalidades planejadas.
 * Divisão do projeto em sprints (iterações), cada uma com uma duração específica.
@@ -20,7 +20,7 @@
 
 **3. Prototipação de Baixa Fidelidade:**
 
-- [ ] feito
+- [x] em andamento
 
 * Criação de esboços e wireframes das páginas principais do site, considerando as versões desktop e mobile.
 * Validação inicial da estrutura e layout das páginas.
@@ -29,7 +29,7 @@
 
 **4. Sprint 1: Configuração do Ambiente e Layout Inicial**
 
-- [ ] feito
+- [x] feito
 
 * Configuração do ambiente de desenvolvimento Next.js.
 * Implementação do layout inicial das páginas principais.
@@ -39,7 +39,7 @@
 
 **5. Sprint 2: Lista de Animais e Quizz**
 
-- [ ] feito
+- [x] em andamento
 
 * Desenvolvimento da lista horizontal de fotos de animais disponíveis.
 * Implementação do quizz com as perguntas de seleção.

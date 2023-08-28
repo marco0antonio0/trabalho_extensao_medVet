@@ -10,6 +10,9 @@
 
 **2. Tela do Quizz (Etapa 1.3 a 1.4)**
 
+- Necessario **validar** alguma dado do usuario
+  - pode ser **nome**,**numero**,**email**
+  - propostas de validações em **aberto**
 - Apresentar ao usuário um quizz de adoção com perguntas relevantes.
 - Avaliar as respostas do usuário e calcular uma pontuação.
 - Se o usuário passar no quizz, exibir uma mensagem de sucesso e oferecer o contato do responsável pelo animal.
