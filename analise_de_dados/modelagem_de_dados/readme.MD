@@ -1,4 +1,6 @@
 **Tabelas do Banco de Dados:**
+**acesso rapido**
+[acessar modelo esquema logico clique aqui xlsx("excel")](/analise_de_dados/modelagem_de_dados/EsquemaLogico.xlsx)
 
 1. **ONG:**
 

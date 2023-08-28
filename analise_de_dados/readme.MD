@@ -1,7 +1,7 @@
 **Página Inicial: Organização das Tabelas do Projeto**
 
 **acesso rapido**
-[acessar modelo esquema logico clique aqui](/modelagem_de_dados/readme.MD)
+[acessar modelo esquema logico clique aqui](/analise_de_dados/modelagem_de_dados/readme.MD)
 
 Nesta página, apresentamos a estrutura de tabelas do nosso projeto, cujo objetivo é gerenciar informações relacionadas a organizações não governamentais (ONGs), animais, usuários, perguntas e formulários. Vamos explorar como as tabelas estão organizadas para armazenar e relacionar os dados de forma eficiente.
 
