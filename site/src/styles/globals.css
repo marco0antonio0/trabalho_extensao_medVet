@@ -1,0 +1,20 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(234, 234, 234, 1);
+}
+.colunm {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+.sessao_1 {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
