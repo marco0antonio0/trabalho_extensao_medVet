@@ -1,0 +1,37 @@
+# Arquivos de configuração
+.env
+
+# Diretório de módulos Node.js
+node_modules/
+
+# Arquivos de log
+logs/
+*.log
+
+# Arquivos de construção
+build/
+dist/
+out/
+
+# Arquivos temporários
+.tmp/
+.temp/
+
+# Arquivos de compilação
+*.min.js
+*.min.css
+
+# Diretório de cache
+.cache/
+
+# Arquivos de configuração do editor (por exemplo, para Visual Studio Code)
+.vscode/
+.idea/
+
+# Arquivos de dependências (geralmente gerados por ferramentas de construção)
+package-lock.json
+yarn.lock
+
+# Arquivos de cache do sistema operacional
+.DS_Store
+Thumbs.db

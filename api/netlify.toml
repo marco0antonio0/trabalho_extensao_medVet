@@ -1,5 +1,16 @@
 [build]
+  command = "npm run build" # Você pode ajustar este comando conforme necessário
   functions = "functions"
 
 [dev]
-  publish = "dist"
+  functionsPort = 3000
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:3000/api/:splat"
+  status = 200
