@@ -1,16 +1,8 @@
-[build]
-  command = "npm run build" # Você pode ajustar este comando conforme necessário
-  functions = "functions"
-
-[dev]
-  functionsPort = 3000
-
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
+  force = true
   from = "/api/*"
-  to = "http://localhost:3000/api/:splat"
   status = 200
+  to = "/.netlify/functions/api/:splat"
