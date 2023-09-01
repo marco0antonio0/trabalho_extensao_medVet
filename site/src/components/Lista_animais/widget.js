@@ -14,7 +14,7 @@ export default function Widget_Lista_animais() {
   ];
   useEffect(() => {
     if (!load) {
-      fetch("http://localhost:4000/api/consuta-dados")
+      fetch("https://api-request.nova-work.cloud/api/consulta-dados")
         .then((e) => e.json())
         .then((e) => {
           console.log(e);
