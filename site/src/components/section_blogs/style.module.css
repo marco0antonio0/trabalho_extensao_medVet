@@ -14,7 +14,7 @@
 }
 .container_cards {
   /* background-color: aqua; */
-  height: 430px;
+  height: 490px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -52,6 +52,8 @@
   margin-left: 40px;
   margin-right: 40px;
   font-family: "Lilita One", cursive;
+  font-size: 5.9mm;
+  max-lines: 3;
 }
 .container_ItemCards {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.085);
@@ -105,7 +107,7 @@
 }
 @media (max-width: 955px) {
   .container_cards {
-    height: 330px;
+    height: 380px;
     font-size: 3.9mm;
   }
   .item_card {
@@ -116,9 +118,14 @@
   .container_0 h1 {
     font-size: 7mm;
   }
+  .item_card h2 {
+    font-size: 5mm;
+  }
   .container_cards {
-    height: 310px;
-    font-size: 3.9mm;
+    height: 340px;
+  }
+  .container_ItemCards h2 {
+    font-size: 5mm;
   }
   .item_card {
     width: 40%;
@@ -140,7 +147,7 @@
     width: 45%;
   }
   .container_cards {
-    height: 320px;
+    height: 340px;
   }
   .container_ItemCards {
     height: 200px;
@@ -158,7 +165,7 @@
     font-size: 5.5mm;
   }
   .container_cards {
-    height: 300px;
+    height: 320px;
   }
   .container_ItemCards {
     border-radius: 40px 40px 0px 0px;
@@ -167,9 +174,10 @@
 }
 @media (max-width: 490px) {
   .container_cards {
-    height: 250px;
+    height: 310px;
   }
   .container_cards h2 {
+    margin-top: -10px;
     font-size: 4mm;
   }
   .container_ItemCards {
@@ -184,9 +192,9 @@
     font-size: 4mm;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 460px) {
   .container_cards {
-    height: 230px;
+    height: 280px;
   }
   .container_cards h2 {
     margin-top: -10px;

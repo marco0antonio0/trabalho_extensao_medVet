@@ -121,21 +121,21 @@ uma determinada largura de tela ser reduzia  */
 /*================================= */
 /*         reponsividade */
 /*================================= */
-@media (max-width: 1250px) {
+@media (max-width: 1290px) {
   .rows_btns h2 {
     margin: auto 25px;
     margin-top: 30px;
-    font-size: 6mm;
+    font-size: 5.5mm;
   }
   .topBar h1 {
-    font-size: 10mm;
+    font-size: 8.5mm;
   }
   .image_logo {
     margin: auto 35px;
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1090px) {
   .rows_btns {
     margin: auto;
   }
