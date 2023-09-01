@@ -85,7 +85,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/*    BTN mostra mais */
+/*    BTN mostrar mais */
 .btn_plus {
   width: auto;
   height: auto;
@@ -98,7 +98,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: #f39562;
 }
-/*    BTN mostra mais > h3 propiedades */
+/*    BTN mostrar mais > h3 propriedades */
 .btn_plus h3 {
   padding: auto;
   margin: auto;
@@ -106,7 +106,7 @@
   font-family: "Lilita One", cursive;
   font-weight: 200;
 }
-/* ação apos o mouse esta em cima da div */
+/* ação após o mouse estar em cima da div */
 .btn_plus:hover {
   transform: scale(105%);
 }

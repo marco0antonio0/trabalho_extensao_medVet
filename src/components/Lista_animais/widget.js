@@ -1,18 +1,18 @@
 import style from "./style.module.css";
 export default function Widget_Lista_animais() {
   const map_animais = [
-    { nome: "dudu", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "jois", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "nova", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "gi", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "faisca", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "edu", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "nani", desc: "pequena desc: Lorem ipsum dolor sit amet" },
+    { nome: "Dudu", desc: "Pequena desc: Lorem ipsum dolor sit amet" },
+    { nome: "Jois", desc: "Pequena desc: Lorem ipsum dolor sit amet" },
+    { nome: "Nova", desc: "Pequena desc: Lorem ipsum dolor sit amet" },
+    { nome: "Gi", desc: "Pequena desc: Lorem ipsum dolor sit amet" },
+    { nome: "Faisca", desc: "Pequena desc: Lorem ipsum dolor sit amet" },
+    { nome: "Edu", desc: "Pequena desc: Lorem ipsum dolor sit amet" },
+    { nome: "Nani", desc: "Pequena desc: Lorem ipsum dolor sit amet" },
   ];
   return (
     <>
       <div className={style.container_menu}>
-        <h1>Todos nossos pets</h1>
+        <h1>Todos os nossos pets</h1>
       </div>
       <div className={style.container_0}>
         {map_animais.map((e, i) => {
@@ -21,7 +21,7 @@ export default function Widget_Lista_animais() {
       </div>
       <div className={style.line_buttom}>
         <div className={style.btn_plus}>
-          <h3>mostra mais</h3>
+          <h3>Mostrar mais</h3>
         </div>
       </div>
     </>
@@ -29,8 +29,8 @@ export default function Widget_Lista_animais() {
 }
 
 function CardAnimal({
-  nome = "nome",
-  desc = "pequena desc: Lorem ipsum dolor sit amet",
+  nome = "Nome",
+  desc = "Pequena desc: Lorem ipsum dolor sit amet",
   id = 0,
 }) {
   return (
