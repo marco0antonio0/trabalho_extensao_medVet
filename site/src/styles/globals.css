@@ -1,9 +1,17 @@
+/* Força o modo claro, independentemente das preferências do sistema */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgba(234, 234, 234, 1);
+    /* --text-color: black; */
+  }
+}
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(234, 234, 234, 1);
+  /* background-color: rgba(234, 234, 234, 1); */
+  background-color: var(--background-color, white);
 }
 .colunm {
   display: flex;
