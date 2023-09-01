@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Lilita+One&family=Londrina+Solid&display=swap");
+/*===================================================================================== */
+.container_0 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.container_0 h1 {
+  font-family: "Lilita One", cursive;
+  font-weight: 300;
+  color: #f39562;
+}
+.container_cards {
+  /* background-color: aqua; */
+  height: 430px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.imagesCards {
+  border-radius: 50px 50px 0px 0px;
+  height: auto;
+  width: 90%;
+  padding: 15px;
+  /* background-color: #f39562; */
+}
+.imagesCards img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+.item_card {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.085);
+
+  border: 1px solid #f39562;
+  cursor: pointer;
+  padding: 20px auto;
+  border-radius: 50px 50px 0px 0px;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: auto;
+}
+.item_card:hover {
+  transform: scale(103%);
+}
+.item_card h2 {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "Lilita One", cursive;
+}
+.container_ItemCards {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.085);
+  margin: auto;
+  border: 1px solid #f39562;
+  border-radius: 60px 60px 0px 0px;
+  margin-top: 15px;
+  display: none;
+  flex-direction: row;
+  width: 95%;
+  height: 200px;
+  background-color: white;
+  cursor: pointer;
+}
+.container_ItemCards:hover {
+  transform: scale(103%);
+}
+.container_ItemCards img {
+  user-select: none;
+  height: 100%;
+  border-radius: 60px 60px 0px 0px;
+
+  width: 100%;
+}
+.container_ItemCards h2 {
+  user-select: none;
+  font-family: "Lilita One", cursive;
+  margin: auto;
+  margin-left: 20px;
+}
+.status_item {
+  display: flex;
+}
+@media (max-width: 1450px) {
+  .container_cards {
+    height: 400px;
+  }
+}
+@media (max-width: 1350px) {
+  .item_card {
+    width: 28%;
+  }
+}
+@media (max-width: 1150px) {
+  .container_cards {
+    height: 370px;
+  }
+  .item_card h2 {
+    margin-top: 0;
+  }
+}
+@media (max-width: 955px) {
+  .container_cards {
+    height: 330px;
+    font-size: 3.9mm;
+  }
+  .item_card {
+    width: 30%;
+  }
+}
+@media (max-width: 777px) {
+  .container_0 h1 {
+    font-size: 7mm;
+  }
+  .container_cards {
+    height: 310px;
+    font-size: 3.9mm;
+  }
+  .item_card {
+    width: 40%;
+    font-size: 3.3mm;
+  }
+  .status_item {
+    display: none;
+  }
+  .container_ItemCards {
+    display: flex;
+  }
+}
+
+@media (max-width: 680px) {
+  .container_0 h1 {
+    font-size: 6.5mm;
+  }
+  .item_card {
+    width: 45%;
+  }
+  .container_cards {
+    height: 320px;
+  }
+  .container_ItemCards {
+    height: 200px;
+  }
+  .container_ItemCards img {
+    margin-right: 0;
+  }
+  .container_ItemCards h2 {
+    margin-left: 10px;
+    font-size: 5mm;
+  }
+}
+@media (max-width: 580px) {
+  .container_0 h1 {
+    font-size: 5.5mm;
+  }
+  .container_cards {
+    height: 300px;
+  }
+  .container_ItemCards {
+    border-radius: 40px 40px 0px 0px;
+    height: 150px;
+  }
+}
+@media (max-width: 490px) {
+  .container_cards {
+    height: 250px;
+  }
+  .container_cards h2 {
+    font-size: 4mm;
+  }
+  .container_ItemCards {
+    border-radius: 40px 40px 0px 0px;
+    height: 120px;
+  }
+  .container_ItemCards img {
+    margin-right: 0;
+  }
+  .container_ItemCards h2 {
+    margin-left: 10px;
+    font-size: 4mm;
+  }
+}
+@media (max-width: 360px) {
+  .container_cards {
+    height: 230px;
+  }
+  .container_cards h2 {
+    margin-top: -10px;
+    font-size: 4mm;
+  }
+  .container_ItemCards {
+    border-radius: 40px 40px 0px 0px;
+    height: 120px;
+  }
+  .container_ItemCards img {
+    margin-right: 0;
+  }
+  .container_ItemCards h2 {
+    margin-left: 10px;
+    font-size: 4mm;
+  }
+}

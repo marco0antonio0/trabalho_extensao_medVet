@@ -3,7 +3,7 @@ import style from "./style.module.css";
 
 export default function Widget_topBar() {
   const [menu, setmenu] = useState(false);
-  // const [click_status, setclick_status] = useState(false);
+
   return (
     <>
       {/* ======================================================= */}
@@ -13,9 +13,7 @@ export default function Widget_topBar() {
         {/* se trata de uma imagem com ação de clique */}
         {/* apos clicar muda o estado true:false */}
         <div
-          className={`${style.menu_laytou_menor} ${
-            menu ? style.animacaoLogo_1 : style.animacaoLogo_2
-          }`}
+          className={`${style.menu_laytou_menor} `}
           onClick={() => {
             setmenu(menu ? false : true);
           }}

@@ -16,7 +16,7 @@ export default function Widget_Lista_animais() {
       </div>
       <div className={style.container_0}>
         {map_animais.map((e, i) => {
-          return <CardAnimal nome={e.nome} desc={e.desc} id={i} />;
+          return <CardAnimal nome={e.nome} desc={e.desc} id={i} key={i} />;
         })}
       </div>
       <div className={style.line_buttom}>
@@ -31,11 +31,11 @@ export default function Widget_Lista_animais() {
 function CardAnimal({
   nome = "nome",
   desc = "pequena desc: Lorem ipsum dolor sit amet",
-  id = 0,
+  id,
 }) {
   return (
     <>
-      <div className={style.card_animal}>
+      <div className={style.card_animal} key={id}>
         {/* ============================== */}
         {/* images */}
         <div className={style.container_image}>

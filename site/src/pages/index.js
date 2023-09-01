@@ -4,6 +4,9 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Widget_topBar from "@/components/topBar/widget";
 import Widget_Lista_animais from "@/components/Lista_animais/widget";
+import Widget_Banner from "@/components/banner/widget";
+import Widget_Blogs_section from "@/components/section_blogs/widget";
+import Widget_BottomBar from "@/components/bottomBar/widget";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +23,10 @@ export default function Home() {
         <Widget_topBar />
         <div className="sessao_1">
           <Widget_Lista_animais />
+          <Widget_Banner />
+          <Widget_Blogs_section />
         </div>
+        <Widget_BottomBar />
       </div>
     </>
   );
