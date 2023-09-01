@@ -29,18 +29,26 @@ export default function Widget_Lista_animais() {
         <h1>Todos nossos pets</h1>
       </div>
       <div className={style.container_0}>
-        {data.map((e, i) => {
-          if (i <= 8) {
-            {
-              return <CardAnimal nome={e.nome} id={i} key={i} />;
+        {data.length ? (
+          data.map((e, i) => {
+            if (i <= 8) {
+              {
+                return <CardAnimal nome={e.nome} id={i} key={i} />;
+              }
             }
-          }
-        })}
+          })
+        ) : (
+          <div className={style.container_cloader}>
+            <div className={style.cloader}></div>
+          </div>
+        )}
       </div>
       <div className={style.line_buttom}>
-        <div className={style.btn_plus} onClick={() => {}}>
-          <h3>mostra mais</h3>
-        </div>
+        {data.length ? (
+          <div className={style.btn_plus} onClick={() => {}}>
+            <h3>mostra mais</h3>
+          </div>
+        ) : null}
       </div>
     </>
   );
