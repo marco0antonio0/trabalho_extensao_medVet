@@ -10,7 +10,7 @@
   border-bottom: solid rgba(0, 0, 0, 0.193) 0.5px;
   margin-bottom: 0;
 }
-/* Logo "adote" */
+/* Logo "meadote" */
 .topBar h1 {
   font-weight: 500;
   margin: auto 0;
@@ -19,7 +19,7 @@
   font-family: "Lakki Reddy", cursive;
   color: rgba(243, 149, 98, 1);
 }
-/* container de imagem da logo */
+/* container imagem da logo */
 .image_logo {
   height: 80%;
   width: auto;
@@ -42,7 +42,7 @@
   margin-left: 20px;
   color: rgba(52, 199, 180, 1);
 }
-/* lista > elemento da lsita */
+/* lista > elemento da lista */
 .rows_btns h2 {
   font-weight: 400;
   cursor: pointer;
@@ -78,7 +78,7 @@ uma determinada largura de tela ser reduzia  */
   border-left: solid rgba(0, 0, 0, 0.177) 0.1px;
   border-bottom: solid rgba(0, 0, 0, 0.177) 0.1px;
 }
-/* elementos do popup menu */
+/* elementos do pop-up menu */
 .menu h2 {
   font-weight: 400;
   cursor: pointer;
@@ -88,7 +88,7 @@ uma determinada largura de tela ser reduzia  */
   font-family: "Londrina Solid", cursive;
   color: rgba(52, 199, 180, 1);
 }
-/* ação apos o mouse esta em cima do elemento h2 do menu popup */
+/* ação apos o mouse estar em cima do elemento h2 do menu pop-up */
 .menu h2:hover {
   color: rgb(105, 232, 215);
 }
@@ -119,7 +119,7 @@ uma determinada largura de tela ser reduzia  */
   }
 }
 /*================================= */
-/*         reponsividade */
+/*         responsividade */
 /*================================= */
 @media (max-width: 1250px) {
   .rows_btns h2 {

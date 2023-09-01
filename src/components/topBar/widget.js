@@ -23,7 +23,7 @@ export default function Widget_topBar() {
           <img src="/images/btn_menu.svg" alt="" />
         </div>
         {/*============================================= */}
-        {/* div logo que limita o tamanho da imagem da logo referida */}
+        {/* div  da logo que limita o tamanho da imagem da logo referida */}
         <div className={style.image_logo}>
           <img src="/images/logo.png" alt="" />
         </div>
@@ -34,7 +34,7 @@ export default function Widget_topBar() {
         {/*============================================= */}
         {/* div que armazena e limita o tamanho da largura para os elementos h2 da lista */}
         <div className={style.rows_btns}>
-          <h2>QUEM SOMOS?</h2>
+          <h2>QUEM SOMOS</h2>
           <h2>QUERO AJUDAR</h2>
           <h2>QUERO ADOTAR</h2>
         </div>
@@ -44,7 +44,7 @@ export default function Widget_topBar() {
       {/* menu popup reduzido */}
       {menu ? (
         <div className={style.menu}>
-          <h2>QUEM SOMOS?</h2>
+          <h2>QUEM SOMOS</h2>
           <h2>QUERO AJUDAR</h2>
           <h2>QUERO ADOTAR</h2>
         </div>
