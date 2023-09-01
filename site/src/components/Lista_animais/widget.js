@@ -1,5 +1,8 @@
+import { useEffect, useState } from "react";
 import style from "./style.module.css";
 export default function Widget_Lista_animais() {
+  const [data, setdata] = useState([]);
+  const [load, setload] = useState(false);
   const map_animais = [
     { nome: "dudu", desc: "pequena desc: Lorem ipsum dolor sit amet" },
     { nome: "jois", desc: "pequena desc: Lorem ipsum dolor sit amet" },
@@ -9,18 +12,33 @@ export default function Widget_Lista_animais() {
     { nome: "edu", desc: "pequena desc: Lorem ipsum dolor sit amet" },
     { nome: "nani", desc: "pequena desc: Lorem ipsum dolor sit amet" },
   ];
+  useEffect(() => {
+    if (!load) {
+      fetch("http://localhost:4000/api/consuta-dados")
+        .then((e) => e.json())
+        .then((e) => {
+          console.log(e);
+          setdata(e.data);
+          setload(true);
+        });
+    }
+  });
   return (
     <>
       <div className={style.container_menu}>
         <h1>Todos nossos pets</h1>
       </div>
       <div className={style.container_0}>
-        {map_animais.map((e, i) => {
-          return <CardAnimal nome={e.nome} desc={e.desc} id={i} key={i} />;
+        {data.map((e, i) => {
+          if (i <= 8) {
+            {
+              return <CardAnimal nome={e.nome} id={i} key={i} />;
+            }
+          }
         })}
       </div>
       <div className={style.line_buttom}>
-        <div className={style.btn_plus}>
+        <div className={style.btn_plus} onClick={() => {}}>
           <h3>mostra mais</h3>
         </div>
       </div>

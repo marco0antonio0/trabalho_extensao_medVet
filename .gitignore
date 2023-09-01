@@ -1,4 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+/api/.env
+
+# Diretório de módulos Node.js
+/api/node_modules/
+
 
 # dependencies
 /site/node_modules
