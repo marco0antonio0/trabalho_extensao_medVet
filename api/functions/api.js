@@ -1,5 +1,13 @@
-const app = require("./../api.js");
+// minha-api-express/functions/api.js
 
-exports.handler = async (event, context) => {
-  return app(event, context);
-};
+import express, { Router } from "express";
+import serverless from "serverless-http";
+
+const api = express();
+
+const router = Router();
+router.get("/hello", (req, res) => res.send("Hello, World!"));
+
+api.use("/.netlify/functions/api", router);
+
+export const handler = serverless(api);
