@@ -1,31 +1,54 @@
+import { useRouter } from "next/router";
 import style from "./style.module.css";
 
 export default function Widget_Blogs_section() {
+  const r = useRouter();
+
   return (
     <>
       <div className={style.container_0}>
         <h1>BLOG EDUCACIONAL</h1>
         <div className={style.container_cards}>
-          <div className={style.item_card}>
+          <div
+            className={style.item_card}
+            onClick={() => {
+              r.push("/blog/boas-praticas");
+            }}
+          >
             <ItemCards
               url_image="/images/imageBlog_1.png"
               titulo="PASSEAR TAMBEM É BOM PRA ELES"
             />
           </div>
-          <div className={style.item_card}>
+          <div
+            className={style.item_card}
+            onClick={() => {
+              r.push("/blog/otimos-cuidados");
+            }}
+          >
             <ItemCards
               url_image="/images/imageBlog_2.png"
               titulo="CUIDE DO SEU PELUDINHO"
             />
           </div>
-          <div className={`${style.item_card} ${style.status_item}`}>
+          <div
+            className={`${style.item_card} ${style.status_item}`}
+            onClick={() => {
+              r.push("/blog/amor-aos-animais");
+            }}
+          >
             <ItemCards
               url_image="/images/imageBlog_3.png"
               titulo="DÊ AMOR E CARINHO"
             />
           </div>
         </div>
-        <div className={style.container_ItemCards}>
+        <div
+          className={style.container_ItemCards}
+          onClick={() => {
+            r.push("/blog/amor-aos-animais");
+          }}
+        >
           <div>
             <img src="/images/imageBlog_3.png" alt="" />
           </div>

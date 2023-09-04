@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+.contaiener_0 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}
+.container_0_0 {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.image_container {
+  margin: auto;
+  margin-right: 20px;
+  height: 100%;
+  width: auto;
+}
+.image_container img {
+  height: 100%;
+  width: 100%;
+}
+.colunmText {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: auto;
+  margin-left: 0;
+}
+.colunmText h1 {
+  font-family: "Lilita One", cursive;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.colunmText h3 {
+  font-family: "Lilita One", cursive;
+  font-weight: 400;
+  margin-top: 0;
+  color: #beb8b8;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .image_container {
+    width: 80px;
+  }
+  .colunmText h1 {
+    font-size: 8mm;
+  }
+}
+@media (max-width: 800px) {
+  .container_0_0 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .colunmText h1 {
+    font-size: 7mm;
+  }
+  .colunmText h3 {
+    font-size: 4.5mm;
+  }
+}
+@media (max-width: 700px) {
+  .container_0_0 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .colunmText h1 {
+    font-size: 6mm;
+  }
+  .colunmText h3 {
+    font-size: 3.5mm;
+  }
+}
+@media (max-width: 500px) {
+  .container_0_0 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .image_container {
+    width: 90px;
+  }
+}
+@media (max-width: 450px) {
+  .container_0_0 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .image_container {
+    width: 120px;
+  }
+}

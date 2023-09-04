@@ -1,9 +1,10 @@
 import { useState } from "react";
 import style from "./style.module.css";
+import { useRouter } from "next/router";
 
 export default function Widget_topBar() {
   const [menu, setmenu] = useState(false);
-
+  const r = useRouter();
   return (
     <>
       {/* ======================================================= */}
@@ -32,9 +33,28 @@ export default function Widget_topBar() {
         {/*============================================= */}
         {/* div que armazena e limita o tamanho da largura para os elementos h2 da lista */}
         <div className={style.rows_btns}>
-          <h2>QUEM SOMOS?</h2>
-          <h2>QUERO AJUDAR</h2>
-          <h2>QUERO ADOTAR</h2>
+          <h2
+            onClick={() => {
+              setmenu(menu ? false : true);
+              r.push("/");
+            }}
+          >
+            INICIO
+          </h2>
+          <h2
+            onClick={() => {
+              setmenu(menu ? false : true);
+            }}
+          >
+            QUEM SOMOS?
+          </h2>
+          <h2
+            onClick={() => {
+              setmenu(menu ? false : true);
+            }}
+          >
+            QUERO AJUDAR
+          </h2>
         </div>
       </div>
       {/*============================================= */}
@@ -42,9 +62,28 @@ export default function Widget_topBar() {
       {/* menu popup reduzido */}
       {menu ? (
         <div className={style.menu}>
-          <h2>QUEM SOMOS?</h2>
-          <h2>QUERO AJUDAR</h2>
-          <h2>QUERO ADOTAR</h2>
+          <h2
+            onClick={() => {
+              r.push("/");
+              setmenu(menu ? false : true);
+            }}
+          >
+            INICIO
+          </h2>
+          <h2
+            onClick={() => {
+              setmenu(menu ? false : true);
+            }}
+          >
+            QUERO AJUDAR
+          </h2>
+          <h2
+            onClick={() => {
+              setmenu(menu ? false : true);
+            }}
+          >
+            QUERO ADOTAR
+          </h2>
         </div>
       ) : null}
       {/* ======================================================= */}

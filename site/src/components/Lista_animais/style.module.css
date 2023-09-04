@@ -120,6 +120,7 @@
   flex-direction: row;
   align-items: center;
   align-content: center;
+  margin-top: 30px;
 }
 /*==================================== */
 /*        animação loading */
