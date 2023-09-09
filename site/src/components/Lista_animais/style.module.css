@@ -12,6 +12,9 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+.disableBTN {
+  filter: opacity(50%);
+}
 /*==================================== */
 /*    div contianer_titulo > titulo */
 .container_menu {
@@ -72,7 +75,9 @@
 /*    card > images > img */
 .container_image img {
   width: 100%;
-  height: 100%;
+  height: 250px;
+
+  object-fit: cover;
 }
 /*==================================== */
 /*        linha de config BTN */
@@ -156,6 +161,10 @@
   .container_menu {
     width: 800px;
   }
+
+  .container_image img {
+    height: 200px;
+  }
 }
 @media (max-width: 900px) {
   .container_0,
@@ -164,6 +173,9 @@
   }
 }
 @media (max-width: 790px) {
+  .container_image img {
+    height: 150px;
+  }
   .container_menu h1 {
     font-size: 8mm;
   }

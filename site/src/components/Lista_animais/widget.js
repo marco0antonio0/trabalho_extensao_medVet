@@ -2,16 +2,9 @@ import { useEffect, useState } from "react";
 import style from "./style.module.css";
 export default function Widget_Lista_animais() {
   const [data, setdata] = useState([]);
+  const [count, setcount] = useState(5);
   const [load, setload] = useState(false);
-  const map_animais = [
-    { nome: "dudu", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "jois", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "nova", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "gi", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "faisca", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "edu", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-    { nome: "nani", desc: "pequena desc: Lorem ipsum dolor sit amet" },
-  ];
+
   useEffect(() => {
     if (!load) {
       fetch("https://api-request.nova-work.cloud/api/consulta-dados")
@@ -31,9 +24,11 @@ export default function Widget_Lista_animais() {
       <div className={style.container_0}>
         {data.length ? (
           data.map((e, i) => {
-            if (i <= 8) {
+            if (i <= count) {
               {
-                return <CardAnimal nome={e.nome} id={i} key={i} />;
+                return (
+                  <CardAnimal nome={e.nome} id={i} key={i} img={e.URL_IMG} />
+                );
               }
             }
           })
@@ -45,7 +40,18 @@ export default function Widget_Lista_animais() {
       </div>
       <div className={style.line_buttom}>
         {data.length ? (
-          <div className={style.btn_plus} onClick={() => {}}>
+          <div
+            className={`${style.btn_plus} ${
+              data.length >= count ? null : style.disableBTN
+            }`}
+            onClick={() => {
+              count <= data.length
+                ? setcount((e) => {
+                    return e + 3;
+                  })
+                : null;
+            }}
+          >
             <h3>mostra mais</h3>
           </div>
         ) : null}
@@ -58,6 +64,7 @@ function CardAnimal({
   nome = "nome",
   desc = "pequena desc: Lorem ipsum dolor sit amet",
   id,
+  img = "/images/short_image_animal.png",
 }) {
   return (
     <>
@@ -65,7 +72,7 @@ function CardAnimal({
         {/* ============================== */}
         {/* images */}
         <div className={style.container_image}>
-          <img src="/images/short_image_animal.png" alt="" />
+          <img src={img} alt="" />
         </div>
         <h2>{nome}</h2>
         <p>{desc}</p>
