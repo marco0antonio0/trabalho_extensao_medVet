@@ -44,6 +44,7 @@ export default function Widget_topBar() {
           <h2
             onClick={() => {
               setmenu(menu ? false : true);
+              r.push("/blog/sobre-nos");
             }}
           >
             QUEM SOMOS?
@@ -51,6 +52,7 @@ export default function Widget_topBar() {
           <h2
             onClick={() => {
               setmenu(menu ? false : true);
+              r.push("/blog/apoie-o-projeto");
             }}
           >
             QUERO AJUDAR
@@ -73,16 +75,18 @@ export default function Widget_topBar() {
           <h2
             onClick={() => {
               setmenu(menu ? false : true);
+              r.push("/blog/sobre-nos");
             }}
           >
-            QUERO AJUDAR
+            QUEM SOMOS?
           </h2>
           <h2
             onClick={() => {
               setmenu(menu ? false : true);
+              r.push("/blog/apoie-o-projeto");
             }}
           >
-            QUERO ADOTAR
+            QUERO AJUDAR
           </h2>
         </div>
       ) : null}

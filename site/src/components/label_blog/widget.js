@@ -2,6 +2,7 @@ import style from "./style.module.css";
 export default function Widget_Label_blog({
   titulo = "PASSEAR FAZ BEM PARA SEU PET",
   desc = "POSTADO POR ME ADOTE, EM AGO 31, 2023",
+  img = "/images/icon_casinha_pets.png",
 }) {
   return (
     <>
@@ -10,7 +11,7 @@ export default function Widget_Label_blog({
           {/*================================================== */}
           {/*  div image */}
           <div className={style.image_container}>
-            <img src="/images/icon_casinha_pets.png" alt="" />
+            <img src={img} alt="" />
           </div>
           {/*================================================== */}
           {/* div coluna de textos h1 e h3 */}

@@ -1,0 +1,25 @@
+.btn_plus {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #f39562;
+  margin-top: 20px;
+}
+/*    BTN mostra mais > h3 propiedades */
+.btn_plus h3 {
+  padding: auto;
+  margin: auto;
+  color: white;
+  font-family: "Lilita One", cursive;
+  font-weight: 200;
+}
+/* ação apos o mouse esta em cima da div */
+.btn_plus:hover {
+  transform: scale(105%);
+}
