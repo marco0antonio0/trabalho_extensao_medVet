@@ -15,7 +15,7 @@ export default async function handler(req, res) {
   const db = new DatabaseConnection();
   try {
     await db.connect();
-    const results = await db.query("SELECT * FROM animais");
+    const results = await db.query("SELECT * FROM animais WHERE adotado = 0");
     res.status(200).json({ data: results });
   } catch (error) {
     console.error("Error executing SQL query:", error.message);
