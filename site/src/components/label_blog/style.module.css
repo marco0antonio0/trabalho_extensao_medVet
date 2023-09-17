@@ -1,19 +1,10 @@
 /*=========================================================== */
-/*            fonte lilita one */
-@font-face {
-  font-family: "Lilita_One_person";
-  src: url("/fonts/LilitaOne-Regular.ttf") format("ttf"),
-    url("/fonts/LilitaOne-Regular.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-/*=========================================================== */
 .contaiener_0 {
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .container_0_0 {
   height: auto;
@@ -23,6 +14,7 @@
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
+  /* background-color: aqua; */
 }
 .image_container {
   margin: auto;

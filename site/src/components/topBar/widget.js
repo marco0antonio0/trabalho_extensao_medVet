@@ -2,17 +2,7 @@ import { useState } from "react";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
 import localFont from "next/font/local";
-//===========================================
-// LilitaOne
-const myFont_LilitaOne = localFont({
-  src: "./../../fonts/LilitaOne-Regular.ttf",
-  subsets: ["latin"],
-});
-// LakkiReddy
-const myFont_LakkiReddy = localFont({
-  src: "./../../fonts/LakkiReddy-Regular.ttf",
-  subsets: ["latin"],
-});
+
 // LondrinaSolid
 const myFont_LondrinaSolid = localFont({
   src: "./../../fonts/LondrinaSolid-Regular.ttf",

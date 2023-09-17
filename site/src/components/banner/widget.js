@@ -1,3 +1,5 @@
+// Banner tela inicial 'nao compre, adote' //
+
 import style from "./style.module.css";
 
 export default function Widget_Banner({

@@ -1,3 +1,5 @@
+// Rodapé
+
 import style from "./style.module.css";
 
 export default function Widget_BottomBar() {
