@@ -1,10 +1,31 @@
 import { useState } from "react";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
-
+import localFont from "next/font/local";
+//===========================================
+// LilitaOne
+const myFont_LilitaOne = localFont({
+  src: "./../../fonts/LilitaOne-Regular.ttf",
+  subsets: ["latin"],
+});
+// LakkiReddy
+const myFont_LakkiReddy = localFont({
+  src: "./../../fonts/LakkiReddy-Regular.ttf",
+  subsets: ["latin"],
+});
+// LondrinaSolid
+const myFont_LondrinaSolid = localFont({
+  src: "./../../fonts/LondrinaSolid-Regular.ttf",
+  subsets: ["latin"],
+});
+//===========================================
+// style={{
+//             fontFamily: `${myFont_LakkiReddy.style.fontFamily}, cursive`,
+//           }}
 export default function Widget_topBar() {
   const [menu, setmenu] = useState(false);
   const r = useRouter();
+
   return (
     <>
       {/* ======================================================= */}
@@ -29,11 +50,20 @@ export default function Widget_topBar() {
         {/*============================================= */}
         {/* logo do tipo text */}
         {/* elemento h1 */}
-        <h1>ME ADOTE</h1>
+        <h1
+          style={{
+            fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+          }}
+        >
+          ME ADOTE
+        </h1>
         {/*============================================= */}
         {/* div que armazena e limita o tamanho da largura para os elementos h2 da lista */}
         <div className={style.rows_btns}>
           <h2
+            style={{
+              fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+            }}
             onClick={() => {
               setmenu(menu ? false : true);
               r.push("/");
@@ -42,6 +72,9 @@ export default function Widget_topBar() {
             INICIO
           </h2>
           <h2
+            style={{
+              fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+            }}
             onClick={() => {
               setmenu(menu ? false : true);
               r.push("/blog/sobre-nos");
@@ -50,6 +83,9 @@ export default function Widget_topBar() {
             QUEM SOMOS?
           </h2>
           <h2
+            style={{
+              fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+            }}
             onClick={() => {
               setmenu(menu ? false : true);
               r.push("/blog/apoie-o-projeto");
@@ -65,6 +101,9 @@ export default function Widget_topBar() {
       {menu ? (
         <div className={style.menu}>
           <h2
+            style={{
+              fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+            }}
             onClick={() => {
               r.push("/");
               setmenu(menu ? false : true);
@@ -73,6 +112,9 @@ export default function Widget_topBar() {
             INICIO
           </h2>
           <h2
+            style={{
+              fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+            }}
             onClick={() => {
               setmenu(menu ? false : true);
               r.push("/blog/sobre-nos");
@@ -81,6 +123,9 @@ export default function Widget_topBar() {
             QUEM SOMOS?
           </h2>
           <h2
+            style={{
+              fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+            }}
             onClick={() => {
               setmenu(menu ? false : true);
               r.push("/blog/apoie-o-projeto");

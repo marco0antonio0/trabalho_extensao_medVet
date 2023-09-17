@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Lilita+One&family=Londrina+Solid&display=swap");
 /*===================================================================================== */
 .container_0 {
   display: flex;
@@ -8,7 +7,7 @@
   margin-bottom: 50px;
 }
 .container_0 h1 {
-  font-family: "Lilita One", cursive;
+  font-display: fallback;
   font-weight: 300;
   color: #f39562;
 }
@@ -51,7 +50,7 @@
 .item_card h2 {
   margin-left: 40px;
   margin-right: 40px;
-  font-family: "Lilita One", cursive;
+  font-display: fallback;
   font-size: 5.9mm;
   max-lines: 3;
 }
@@ -80,7 +79,7 @@
 }
 .container_ItemCards h2 {
   user-select: none;
-  font-family: "Lilita One", cursive;
+  font-family: "Lilita_One_person", cursive;
   margin: auto;
   margin-left: 20px;
 }

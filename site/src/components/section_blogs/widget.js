@@ -1,13 +1,39 @@
 import { useRouter } from "next/router";
 import style from "./style.module.css";
-
+import localFont from "next/font/local";
+//===========================================
+// LilitaOne
+const myFont_LilitaOne = localFont({
+  src: "./../../fonts/LilitaOne-Regular.ttf",
+  subsets: ["latin"],
+});
+// LakkiReddy
+const myFont_LakkiReddy = localFont({
+  src: "./../../fonts/LakkiReddy-Regular.ttf",
+  subsets: ["latin"],
+});
+// LondrinaSolid
+const myFont_LondrinaSolid = localFont({
+  src: "./../../fonts/LondrinaSolid-Regular.ttf",
+  subsets: ["latin"],
+});
+//===========================================
+// style={{
+//             fontFamily: `${myFont_LakkiReddy.style.fontFamily}, cursive`,
+//           }}
 export default function Widget_Blogs_section() {
   const r = useRouter();
 
   return (
     <>
       <div className={style.container_0}>
-        <h1>BLOG EDUCACIONAL</h1>
+        <h1
+          style={{
+            fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+          }}
+        >
+          BLOG EDUCACIONAL
+        </h1>
         <div className={style.container_cards}>
           <div
             className={style.item_card}
@@ -52,7 +78,13 @@ export default function Widget_Blogs_section() {
           <div>
             <img src="/images/imageBlog_3.png" alt="" />
           </div>
-          <h2>DÊ AMOR E CARINHO</h2>
+          <h2
+            style={{
+              fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+            }}
+          >
+            DÊ AMOR E CARINHO
+          </h2>
         </div>
       </div>
     </>
@@ -67,7 +99,13 @@ function ItemCards({ titulo, url_image }) {
         <img src={url_image} alt="" />
       </div>
       {/*====================================== */}
-      <h2>{titulo}</h2>
+      <h2
+        style={{
+          fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+        }}
+      >
+        {titulo}
+      </h2>
     </>
   );
 }

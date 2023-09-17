@@ -1,5 +1,11 @@
 import { useRouter } from "next/router";
 import style from "./style.module.css";
+import localFont from "next/font/local";
+
+const myFont_LilitaOne = localFont({
+  src: "./../../fonts/LilitaOne-Regular.ttf",
+  subsets: ["latin"],
+});
 export default function Widget_btn_person({
   numero,
   codigo,
@@ -16,7 +22,13 @@ export default function Widget_btn_person({
           );
         }}
       >
-        <h3>solicitar o pedido no whatsapp !!</h3>
+        <h3
+          style={{
+            fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+          }}
+        >
+          solicitar o pedido no whatsapp !!
+        </h3>
       </div>
     </>
   );
@@ -31,7 +43,13 @@ export function Widget_btn_person1() {
           r.push(`/blog/boas-praticas`);
         }}
       >
-        <h3>vou ler e tentar novamente !!</h3>
+        <h3
+          style={{
+            fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+          }}
+        >
+          vou ler e tentar novamente !!
+        </h3>
       </div>
     </>
   );

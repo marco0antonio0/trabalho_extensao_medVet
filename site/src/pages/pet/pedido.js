@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Widget_load_screen from "@/components/load/widget";
 import Widget_btn_person from "@/components/widget_btn/widget";
+import { config_api } from "@/model/get_api";
 
 export default function Home() {
   const [data, setdata] = useState([]);
@@ -18,52 +19,43 @@ export default function Home() {
   const { d, dd, ddd, dddd } = r.query;
   useEffect(() => {
     if (!load && d) {
-      fetch(
-        "https://api-request.nova-work.cloud/api/one-consulta-dados?id=" + d
-      )
-        .then((e) => e.json())
-        .then((e) => {
-          try {
-            let d = e.data[0];
-            if (d.tipo == "c") {
-              d.tipo = "cachorro";
-            } else {
-              d.tipo = "gato";
-            }
-            if (d.genero == "M") {
-              d.genero = "macho";
-            } else {
-              d.genero = "femea";
-            }
-            // console.log(d);
-            setdata(d);
-            if (d.nome.length > 0) {
-              setload2(true);
-            }
+      //=============================================================================
+      config_api.get("/api/one-consulta-dados?id=" + d).then((e) => {
+        try {
+          let d = e.data[0];
+          if (d.tipo == "c") {
+            d.tipo = "cachorro";
+          } else {
+            d.tipo = "gato";
+          }
+          if (d.genero == "M") {
+            d.genero = "macho";
+          } else {
+            d.genero = "femea";
+          }
+          setdata(d);
+          if (d.nome.length > 0) {
+            setload2(true);
+          }
 
-            setload(true);
-          } catch (error) {}
-        });
+          setload(true);
+        } catch (error) {}
+      });
+      //=============================================================================
     }
     if (!load11 && dd) {
-      fetch(
-        "https://api-request.nova-work.cloud/api/one-consulta-dados-ong?id=" +
-          dd
-      )
-        .then((e) => e.json())
-        .then((e) => {
-          try {
-            let d = e.data[0];
-
-            // console.log(d);
-            setdata11(d);
-            if (d.nome.length > 0) {
-              setload2(true);
-            }
-
-            setload11(true);
-          } catch (error) {}
-        });
+      //=============================================================================
+      config_api.get("/api/one-consulta-dados-ong?id=" + dd).then((e) => {
+        try {
+          let d = e.data[0];
+          setdata11(d);
+          if (d.nome.length > 0) {
+            setload2(true);
+          }
+          setload11(true);
+        } catch (error) {}
+      });
+      //=============================================================================
     }
   });
   return (
@@ -78,20 +70,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="colunm">
+        {/* componente topBar */}
         <Widget_topBar />
         {load11 && load2 ? (
           <div className="sessao_1">
+            {/*================================================= */}
+            {/* componente titulo Blog */}
             <Widget_Label_blog
               titulo="Parabens voce passou no quizz"
               img="/images/icon-festa.png"
               desc=""
             />
-            {/* <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" /> */}
+            {/*================================================= */}
+            {/* componente blog */}
             <Widegt_Post_text
               titulo={`Entre em contato com a ong ${data11.nome}`}
               texto={`Ola ${ddd} parabens por ter passado no nosso quizz entre em contato com a ong responsavel pelo pet clicando no botão abaixo contato via whatsapp e informe o codigo ${data.id}-${data11.id}-${dddd} para completar sua adoção `}
             />
             {/*================================================= */}
+            {/* componente buttom */}
             <Widget_btn_person
               numero={data11.telefone}
               codigo={`${data.id}-${data11.id}-${dddd} `}
@@ -101,10 +98,16 @@ export default function Home() {
           </div>
         ) : (
           <div className="sessao_1">
+            {/*================================================= */}
+            {/* componente de load */}
             <Widget_load_screen />
+            {/*================================================= */}
           </div>
         )}
+        {/*================================================= */}
+        {/* sessão estrutura mais a abaixo */}
         <Widget_BottomBar />
+        {/*================================================= */}
       </div>
     </>
   );

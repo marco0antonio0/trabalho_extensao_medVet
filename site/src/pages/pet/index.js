@@ -6,6 +6,7 @@ import Widget_perfil from "@/components/pet_perfil/widget";
 import { useRouter } from "next/router";
 import Widget_quizz from "@/components/quizz/widget";
 import Widget_load_screen from "@/components/load/widget";
+import { config_api } from "@/model/get_api";
 
 export default function Home() {
   const r = useRouter();
@@ -15,32 +16,26 @@ export default function Home() {
   const [load2, setload2] = useState(false);
   useEffect(() => {
     if (!load && id) {
-      fetch(
-        "https://api-request.nova-work.cloud/api/one-consulta-dados?id=" + id
-      )
-        .then((e) => e.json())
-        .then((e) => {
-          try {
-            let d = e.data[0];
-            if (d.tipo == "c") {
-              d.tipo = "cachorro";
-            } else {
-              d.tipo = "gato";
-            }
-            if (d.genero == "M") {
-              d.genero = "macho";
-            } else {
-              d.genero = "femea";
-            }
-            // console.log(d);
-            setdata(d);
-            if (d.nome.length > 0) {
-              setload2(true);
-            }
-
-            setload(true);
-          } catch (error) {}
-        });
+      config_api.get(`/api/one-consulta-dados?id=${id}`).then((e) => {
+        try {
+          let d = e.data[0];
+          if (d.tipo == "c") {
+            d.tipo = "cachorro";
+          } else {
+            d.tipo = "gato";
+          }
+          if (d.genero == "M") {
+            d.genero = "macho";
+          } else {
+            d.genero = "femea";
+          }
+          setdata(d);
+          if (d.nome.length > 0) {
+            setload2(true);
+          }
+          setload(true);
+        } catch (error) {}
+      });
     }
   });
   return (
@@ -70,7 +65,10 @@ export default function Home() {
             {/*================================================ */}
           </div>
         )}
+        {/*================================================= */}
+        {/* sessão estrutura mais a abaixo */}
         <Widget_BottomBar />
+        {/*================================================= */}
       </div>
     </>
   );

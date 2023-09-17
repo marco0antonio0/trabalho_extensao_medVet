@@ -1,6 +1,17 @@
 import { useEffect, useState } from "react";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
+import localFont from "next/font/local";
+const myFont_LilitaOne = localFont({
+  src: "./../../fonts/LilitaOne-Regular.ttf",
+  subsets: ["latin"],
+});
+// LondrinaSolid
+const myFont_LondrinaSolid = localFont({
+  src: "./../../fonts/LondrinaSolid-Regular.ttf",
+  subsets: ["latin"],
+});
+
 export default function Widget_quizz({ data }) {
   const r = useRouter();
   const [res, setres] = useState([]);
@@ -50,7 +61,11 @@ export default function Widget_quizz({ data }) {
     <>
       <div className={style.container_0}>
         <div className={style.titulo_container}>
-          <h2>
+          <h2
+            style={{
+              fontFamily: `${myFont_LondrinaSolid.style.fontFamily}, cursive`,
+            }}
+          >
             RESPONDA O QUIZZ <br />
             PARA COMPLETAR A ADOÇÃO
           </h2>
@@ -122,7 +137,6 @@ export default function Widget_quizz({ data }) {
         <div
           className={style.btn_plus}
           onClick={() => {
-            // console.log(res);
             try {
               if (
                 nome.length > 0 &&
@@ -154,7 +168,13 @@ export default function Widget_quizz({ data }) {
             }
           }}
         >
-          <h3>envia respostas</h3>
+          <h3
+            style={{
+              fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+            }}
+          >
+            envia respostas
+          </h3>
         </div>
       </div>
     </>

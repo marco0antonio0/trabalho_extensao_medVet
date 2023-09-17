@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+/*=========================================================== */
+/*            fonte lilita one */
+@font-face {
+  font-family: "Lilita_One_person";
+  src: url("/fonts/LilitaOne-Regular.ttf") format("ttf"),
+    url("/fonts/LilitaOne-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*=========================================================== */
 .contaiener_0 {
   height: auto;
   width: 100%;
@@ -33,12 +42,12 @@
   margin-left: 0;
 }
 .colunmText h1 {
-  font-family: "Lilita One", cursive;
+  font-family: "Lilita_One_person", cursive;
   font-weight: 400;
   margin-bottom: 10px;
 }
 .colunmText h3 {
-  font-family: "Lilita One", cursive;
+  font-family: "Lilita_One_person", cursive;
   font-weight: 400;
   margin-top: 0;
   color: #beb8b8;

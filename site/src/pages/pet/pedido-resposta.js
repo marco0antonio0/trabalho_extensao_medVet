@@ -4,21 +4,10 @@ import Widget_BottomBar from "@/components/bottomBar/widget";
 import Widget_Label_blog from "@/components/label_blog/widget";
 import Widegt_Post_text from "@/components/post_text/widget";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import Widget_load_screen from "@/components/load/widget";
-import Widget_btn_person, {
-  Widget_btn_person1,
-} from "@/components/widget_btn/widget";
+import { Widget_btn_person1 } from "@/components/widget_btn/widget";
 
 export default function Home() {
-  const [data, setdata] = useState([]);
-  const [load, setload] = useState(false);
-  const [load2, setload2] = useState(false);
-  const [data11, setdata11] = useState([]);
-  const [load11, setload11] = useState(false);
   const r = useRouter();
-  const { d, dd, ddd, dddd } = r.query;
-
   return (
     <>
       <Head>
@@ -31,29 +20,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="colunm">
+        {/* componente topBar */}
         <Widget_topBar />(
         <div className="sessao_1">
+          {/*================================================= */}
+          {/* componente titulo Blog */}
           <Widget_Label_blog
             titulo="Poxaaaaaa"
             img="\images\icon-errou.png"
             desc=""
           />
-          {/* <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" /> */}
+          {/*================================================= */}
+          {/* componente titulo Blog */}
           <Widegt_Post_text
             titulo={`Poxaaa as respostas que voce selecionou `}
             texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
           />
           {/*================================================= */}
+          {/* sessão estrutura mais a abaixo */}
           <Widegt_Post_text
             titulo={`Leia nosso blog sobre cuidados basicos e tente novamente`}
             texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
           />
           {/*================================================= */}
+          {/* sessão estrutura mais a abaixo */}
           <Widget_btn_person1 />
           {/*================================================= */}
         </div>
-        )
+        ){/*================================================= */}
+        {/* sessão estrutura mais a abaixo */}
         <Widget_BottomBar />
+        {/*================================================= */}
       </div>
     </>
   );
