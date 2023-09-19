@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+// ======== QUIZ SITE =======//
+
+import { useState } from "react";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
 import localFont from "next/font/local";
@@ -6,12 +8,15 @@ const myFont_LilitaOne = localFont({
   src: "./../../fonts/LilitaOne-Regular.ttf",
   subsets: ["latin"],
 });
+
+
 // LondrinaSolid
 const myFont_LondrinaSolid = localFont({
   src: "./../../fonts/LondrinaSolid-Regular.ttf",
   subsets: ["latin"],
 });
 
+// Função quiz
 export default function Widget_quizz({ data }) {
   const r = useRouter();
   const [res, setres] = useState([]);

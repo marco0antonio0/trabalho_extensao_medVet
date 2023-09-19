@@ -1,11 +1,18 @@
 import style from "./style.module.css";
 import localFont from "next/font/local";
-//===========================================
+
+
+//=====================  ======================
+
+
 // LilitaOne
 const myFont_LilitaOne = localFont({
   src: "./../../fonts/LilitaOne-Regular.ttf",
   subsets: ["latin"],
 });
+
+// Titulo dos blogs
+
 export default function Widget_Label_blog({
   titulo = "PASSEAR FAZ BEM PARA SEU PET",
   desc = "POSTADO POR ME ADOTE, EM AGO 31, 2023",

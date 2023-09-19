@@ -2,10 +2,16 @@ import { useRouter } from "next/router";
 import style from "./style.module.css";
 import localFont from "next/font/local";
 
+// Classe Fonte 'LilitaOne-regular'
+
 const myFont_LilitaOne = localFont({
   src: "./../../fonts/LilitaOne-Regular.ttf",
   subsets: ["latin"],
 });
+
+
+// ==================================================== //
+
 export default function Widget_btn_person({
   numero,
   codigo,
@@ -33,6 +39,9 @@ export default function Widget_btn_person({
     </>
   );
 }
+
+// ==================================================================== //
+
 export function Widget_btn_person1() {
   const r = useRouter();
   return (

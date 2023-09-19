@@ -8,10 +8,11 @@ const myFont_LondrinaSolid = localFont({
   src: "./../../fonts/LondrinaSolid-Regular.ttf",
   subsets: ["latin"],
 });
-//===========================================
-// style={{
-//             fontFamily: `${myFont_LakkiReddy.style.fontFamily}, cursive`,
-//           }}
+
+
+//================== MENU DO SITE =========================
+
+
 export default function Widget_topBar() {
   const [menu, setmenu] = useState(false);
   const r = useRouter();

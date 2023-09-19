@@ -1,3 +1,5 @@
+// ======== Sessão de texto ========= //
+
 import style from "./style.module.css";
 export default function Widegt_Post_text({ texto = "", titulo = "" }) {
   return (

@@ -1,26 +1,37 @@
 import { useRouter } from "next/router";
 import style from "./style.module.css";
 import localFont from "next/font/local";
+
 //===========================================
+
 // LilitaOne
 const myFont_LilitaOne = localFont({
   src: "./../../fonts/LilitaOne-Regular.ttf",
   subsets: ["latin"],
 });
-// LakkiReddy
-const myFont_LakkiReddy = localFont({
-  src: "./../../fonts/LakkiReddy-Regular.ttf",
-  subsets: ["latin"],
-});
-// LondrinaSolid
-const myFont_LondrinaSolid = localFont({
-  src: "./../../fonts/LondrinaSolid-Regular.ttf",
-  subsets: ["latin"],
-});
-//===========================================
-// style={{
-//             fontFamily: `${myFont_LakkiReddy.style.fontFamily}, cursive`,
-//           }}
+
+// ========= Card da sessão Blog =========== //
+function ItemCards({ titulo, url_image }) {
+  return (
+    <>
+      {/* ====================================== */}
+      <div className={style.imagesCards}>
+        <img src={url_image} alt="" />
+      </div>
+      {/* ====================================== */}
+      <h2
+        style={{
+          fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+        }}
+      >
+        {titulo}
+      </h2>
+    </>
+  );
+}
+
+//=================== Sessaõ de blogs ========================
+
 export default function Widget_Blogs_section() {
   const r = useRouter();
 
@@ -41,6 +52,7 @@ export default function Widget_Blogs_section() {
               r.push("/blog/boas-praticas");
             }}
           >
+             {/** Desclaração da função intem card */}
             <ItemCards
               url_image="/images/imageBlog_1.png"
               titulo="PASSEAR TAMBEM É BOM PRA ELES"
@@ -52,6 +64,7 @@ export default function Widget_Blogs_section() {
               r.push("/blog/otimos-cuidados");
             }}
           >
+            {/** Desclaração da função intem card */}
             <ItemCards
               url_image="/images/imageBlog_2.png"
               titulo="CUIDE DO SEU PELUDINHO"
@@ -63,6 +76,7 @@ export default function Widget_Blogs_section() {
               r.push("/blog/amor-aos-animais");
             }}
           >
+            {/** Desclaração da função intem card */}
             <ItemCards
               url_image="/images/imageBlog_3.png"
               titulo="DÊ AMOR E CARINHO"
@@ -91,21 +105,3 @@ export default function Widget_Blogs_section() {
   );
 }
 
-function ItemCards({ titulo, url_image }) {
-  return (
-    <>
-      {/*====================================== */}
-      <div className={style.imagesCards}>
-        <img src={url_image} alt="" />
-      </div>
-      {/*====================================== */}
-      <h2
-        style={{
-          fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
-        }}
-      >
-        {titulo}
-      </h2>
-    </>
-  );
-}

@@ -1,5 +1,7 @@
 import style from "./style.module.css";
 
+// Tela de carregamento:
+
 export default function Widget_load_screen() {
   return (
     <>

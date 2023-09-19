@@ -3,26 +3,24 @@ import style from "./style.module.css";
 import { useRouter } from "next/router";
 import { config_api } from "@/model/get_api";
 import localFont from "next/font/local";
-//===========================================
-// LilitaOne
+
+//=========================================== //
+
+// Fonte LilitaOne
 const myFont_LilitaOne = localFont({
   src: "./../../fonts/LilitaOne-Regular.ttf",
   subsets: ["latin"],
 });
-// LakkiReddy
+
+// Fonte LakkiReddy
 const myFont_LakkiReddy = localFont({
   src: "./../../fonts/LakkiReddy-Regular.ttf",
   subsets: ["latin"],
 });
-// LondrinaSolid
-const myFont_LondrinaSolid = localFont({
-  src: "./../../fonts/LondrinaSolid-Regular.ttf",
-  subsets: ["latin"],
-});
-//===========================================
-// style={{
-//             fontFamily: `${myFont_LakkiReddy.style.fontFamily}, cursive`,
-//           }}
+
+//=========================================== //
+
+// Card inicial da tela principal
 export default function Widget_Lista_animais() {
   const [data, setdata] = useState([]);
   const [load, setload] = useState(false);
@@ -93,6 +91,8 @@ export default function Widget_Lista_animais() {
   );
 }
 
+// =========================================================== //
+// Perfis de animais: breve descrição pag. inicial
 function CardAnimal({ nome = "nome", desc = "", img = "", id }) {
   const r = useRouter();
   return (
