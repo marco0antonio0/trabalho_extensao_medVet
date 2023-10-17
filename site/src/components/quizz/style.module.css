@@ -63,6 +63,7 @@
   margin-top: 20px;
 }
 .btn_plus h3 {
+  user-select: none;
   padding: auto;
   margin: auto;
   color: white;

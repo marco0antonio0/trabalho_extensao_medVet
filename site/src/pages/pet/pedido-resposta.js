@@ -8,6 +8,7 @@ import { Widget_btn_person1 } from "@/components/widget_btn/widget";
 
 export default function Home() {
   const r = useRouter();
+  const { dx } = r.query;
   return (
     <>
       <Head>
@@ -19,16 +20,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Widget_topBar />
       <div className="colunm">
-        {/* componente topBar */}
-        <Widget_topBar />(
+        {/* componente topBar */}(
         <div className="sessao_1">
           {/*================================================= */}
           {/* componente titulo Blog */}
           <Widget_Label_blog
             titulo="Poxaaaaaa"
             img="\images\icon-errou.png"
-            desc=""
+            desc={`Sua pontuação foi de ${dx} de 10 pontos `}
           />
           {/*================================================= */}
           {/* componente titulo Blog */}
@@ -49,9 +50,9 @@ export default function Home() {
         </div>
         ){/*================================================= */}
         {/* sessão estrutura mais a abaixo */}
-        <Widget_BottomBar />
         {/*================================================= */}
       </div>
+      <Widget_BottomBar />
     </>
   );
 }

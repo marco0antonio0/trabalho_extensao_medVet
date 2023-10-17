@@ -15,10 +15,11 @@ body {
   background-color: var(--background-color, white);
 }
 .colunm {
+  margin: auto;
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 100%;
+  width: 1750px;
 }
 .sessao_1 {
   margin: auto;
@@ -26,4 +27,9 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1750px) {
+  .colunm {
+    width: 100%;
+  }
 }

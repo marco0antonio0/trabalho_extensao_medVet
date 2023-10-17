@@ -1,20 +1,24 @@
 .container_0 {
+  user-select: none;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
 }
 .det_img {
+  user-select: none;
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
 }
 .det_img img {
+  user-select: none;
   height: 100%;
   width: 100%;
 }
 .container_1 {
+  user-select: none;
   display: flex;
   flex-direction: row;
   height: auto;

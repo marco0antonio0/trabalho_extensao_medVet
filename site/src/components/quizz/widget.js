@@ -9,7 +9,6 @@ const myFont_LilitaOne = localFont({
   subsets: ["latin"],
 });
 
-
 // LondrinaSolid
 const myFont_LondrinaSolid = localFont({
   src: "./../../fonts/LondrinaSolid-Regular.ttf",
@@ -22,42 +21,83 @@ export default function Widget_quizz({ data }) {
   const [res, setres] = useState([]);
   const [nome, setnome] = useState("");
   const [telefone, settelefone] = useState("");
-  const [pontos, setpontos] = useState(0);
   const [erro, seterro] = useState(false);
   const perguntas = [
     {
-      pergunta: "Donec commodo non lacus quis volutpat. Cras mauris felis ?",
+      pergunta:
+        "Você tem consciência de que cães e gatos podem viver mais de 15 anos e que você terá total responsabilidade durante toda vida do animal?",
       opcoes: [
         ["sim", 1],
         ["nao", 0],
       ],
     },
     {
-      pergunta: "Donec commodo non lacus quis volutpat. Cras mauris felis ?",
+      pergunta:
+        "	Você está disposto a dar uma vida ativa ao animal (passeios, interações sociais e dinâmicas)?",
       opcoes: [
         ["sim", 1],
         ["nao", 0],
       ],
     },
     {
-      pergunta: "Donec commodo non lacus quis volutpat. Cras mauris felis ?",
+      pergunta:
+        "Você está ciente que animais possuem custos (alimentação, veterinário, acessórios e brinquedos)?",
       opcoes: [
         ["sim", 1],
         ["nao", 0],
       ],
     },
     {
-      pergunta: "Donec commodo non lacus quis volutpat. Cras mauris felis ?",
+      pergunta:
+        "Você está ciente de que o animal é um ser irracional que durante o período de adaptação pode agir de formas imprevistas (arranhar móveis, latidos ou miados excessivos, soltura de pelos e fazer necessidades onde não deveria)?",
       opcoes: [
         ["sim", 1],
         ["nao", 0],
       ],
     },
     {
-      pergunta: "Donec commodo non lacus quis volutpat. Cras mauris felis ?",
+      pergunta:
+        "Você se certificou se há alguém na sua residência que possui alergia a animais?",
       opcoes: [
-        ["sim", 0],
-        ["nao", 1],
+        ["sim", 1],
+        ["nao", 0],
+      ],
+    },
+    {
+      pergunta:
+        "Você está ciente de que, ao adotar um animal filhote, ele pode crescer mais que o previsto?",
+      opcoes: [
+        ["sim", 1],
+        ["nao", 0],
+      ],
+    },
+    {
+      pergunta: "Sua residência oferece segurança para o animal?",
+      opcoes: [
+        ["sim", 1],
+        ["nao", 0],
+      ],
+    },
+    {
+      pergunta: "Você compreende a importância da castração?",
+      opcoes: [
+        ["sim", 1],
+        ["nao", 0],
+      ],
+    },
+    {
+      pergunta:
+        "Em caso de viagens, há algum responsável com quem deixar o animal?",
+      opcoes: [
+        ["sim", 1],
+        ["nao", 0],
+      ],
+    },
+    {
+      pergunta: "Você tem certeza da adoção?",
+      opcoes: [
+        ["sim", 1],
+        ["nao", 0],
       ],
     },
   ];
@@ -75,6 +115,8 @@ export default function Widget_quizz({ data }) {
             PARA COMPLETAR A ADOÇÃO
           </h2>
         </div>
+        {/*========================================== */}
+        {/*   pergunta >> qual seu nome */}
         <div className={style.ask_container}>
           <h2>Qual seu nome?</h2>
           <input
@@ -87,10 +129,12 @@ export default function Widget_quizz({ data }) {
             }}
           />
         </div>
+        {/*========================================== */}
+        {/*   pergunta >> Numero para contato */}
         <div className={style.ask_container}>
           <h2>Numero para contato?</h2>
           <input
-            type="number"
+            type="tel"
             placeholder="ddd + numero "
             value={telefone}
             onChange={(e) => {
@@ -99,6 +143,8 @@ export default function Widget_quizz({ data }) {
             }}
           />
         </div>
+        {/*========================================== */}
+        {/*   perguntas do quizz */}
         {perguntas.map((e, i) => {
           return (
             <div className={style.ask_container} key={i}>
@@ -113,11 +159,6 @@ export default function Widget_quizz({ data }) {
                     return instance;
                   });
                   seterro(false);
-                  setpontos((g) => {
-                    let instance = g;
-                    instance += parseInt(e.target.value);
-                    return instance;
-                  });
                 }}
               >
                 <option value={null}>{"selecione"}</option>
@@ -142,32 +183,36 @@ export default function Widget_quizz({ data }) {
         <div
           className={style.btn_plus}
           onClick={() => {
+            let pass = true;
+            var cont = 0;
             try {
-              if (
-                nome.length > 0 &&
-                telefone.length > 0 &&
-                res[0] >= 0 &&
-                res[1] >= 0 &&
-                res[2] >= 0 &&
-                res[3] >= 0 &&
-                res[4] >= 0 &&
-                typeof res[0] != typeof undefined &&
-                typeof res[1] != typeof undefined &&
-                typeof res[2] != typeof undefined &&
-                typeof res[3] != typeof undefined &&
-                typeof res[4] != typeof undefined
-              ) {
-                // console.log(pontos);
-                if (pontos < 3) {
-                  r.push("/pet/pedido-resposta");
+              res.map((e) => {
+                if (typeof e == typeof undefined || e == "selecione") {
+                  pass = false;
+                } else {
+                  cont += parseInt(e);
+                }
+              });
+              // =============================================================
+              //        verificação se campos validos >> nome e telefone
+              if (nome.length > 3 && telefone.length >= 7 && pass) {
+                console.log(cont);
+                seterro(false);
+                // =============================================================
+                //      verificação se pontos totais validos
+                if (cont < 5) {
+                  r.push(`/pet/pedido-resposta?dx=${cont}`);
                 } else {
                   r.push(
-                    `/pet/pedido?d=${data.id}&dd=${data.id_ong}&ddd=${nome}&dddd=${telefone}`
+                    `/pet/pedido?d=${data.id}&dd=${data.id_ong}&ddd=${nome}&dx=${cont}&dddd=${telefone}`
                   );
                 }
               } else {
+                // =============================================================
+                //        caso a verificação se campos validos falhe >> nome e telefone
                 seterro(true);
               }
+              // =============================================================
             } catch (error) {
               seterro(true);
             }

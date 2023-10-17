@@ -16,7 +16,7 @@ export default function Home() {
   const [data11, setdata11] = useState([]);
   const [load11, setload11] = useState(false);
   const r = useRouter();
-  const { d, dd, ddd, dddd } = r.query;
+  const { d, dd, ddd, dddd, dx } = r.query;
   useEffect(() => {
     if (!load && d) {
       //=============================================================================
@@ -69,17 +69,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Widget_topBar />
       <div className="colunm">
         {/* componente topBar */}
-        <Widget_topBar />
         {load11 && load2 ? (
           <div className="sessao_1">
             {/*================================================= */}
             {/* componente titulo Blog */}
             <Widget_Label_blog
-              titulo="Parabens voce passou no quizz"
+              titulo={` Parabens voce passou no quizz `}
               img="/images/icon-festa.png"
-              desc=""
+              desc={`Sua pontuação foi de ${dx} de 10 pontos `}
             />
             {/*================================================= */}
             {/* componente blog */}
@@ -106,9 +106,9 @@ export default function Home() {
         )}
         {/*================================================= */}
         {/* sessão estrutura mais a abaixo */}
-        <Widget_BottomBar />
         {/*================================================= */}
       </div>
+      <Widget_BottomBar />
     </>
   );
 }
