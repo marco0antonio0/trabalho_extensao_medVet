@@ -1,6 +1,10 @@
-# Projeto de Doação de Animais: Encontre seu Pet Amigão Online
+# Projeto de Doação de Animais: Adote um Pet Online
 
 ![img](/images/topBar.png)
+
+## Acesso preview ao site em desenvolvimento
+
+- [acesse clicando aqui](https://adote.nova-work.cloud/)
 
 ## Acesso rapido
 
@@ -17,16 +21,19 @@ clique no topico que deseja acesso
     - desc: guia de preparação de ambiende de desenvolvimento
   - [etapas 5](/etapas_dev/etapa_5/readme.MD)
     - desc: desenvolver as telas necessariamente planejadas
-  - [etapas 6 : em desenvolvimento](/)
-  - [etapas 7 : em desenvolvimento](/)
-  - [etapas 8 : em desenvolvimento](/)
-  - [etapas 9 : em desenvolvimento](/)
-  - [etapas 10 : em desenvolvimento](/)
-  - [etapas 11 : em desenvolvimento](/)
+  - etapas 6
+    - Blog e Integração com Contato
+  - etapas 7 -- fase atual em andamento
+    - Refinamento e Ajustes Finais
+  - etapas 8 -- fase atual em andamento
+    - Prototipação de Alta Fidelidade
+  - etapas 9 -- _Proxima fase em espera_
+    - Polimento e Preparação para Lançamento
+    - Captação de parcerias como ONGs e Abrigos na região de belém do Pará
 
 ## Introdução
 
-No mundo contemporâneo, a tecnologia tem desempenhado um papel crucial na conexão de pessoas e na resolução de desafios sociais. Nesse contexto, surge o projeto _"Encontre seu Pet Amigão Online"_, uma iniciativa inovadora que busca unir pessoas em busca de um novo amigo de quatro patas e promover o bem-estar animal. Desenvolvido em parceria entre o grupo acadêmico de extensão de Ciência da Computação e o grupo acadêmico de Medicina Veterinária da **UNAMA Parque Shopping**, o projeto visa facilitar o processo de adoção de animais por meio de uma plataforma digital interativa.
+No mundo contemporâneo, a tecnologia tem desempenhado um papel crucial na conexão de pessoas e na resolução de desafios sociais. Nesse contexto, surge o projeto _"Adote um Pet Online"_, uma iniciativa inovadora que busca unir pessoas em busca de um novo amigo de quatro patas e promover o bem-estar animal. Desenvolvido em parceria entre o grupo acadêmico de extensão de Ciência da Computação e o grupo acadêmico de Medicina Veterinária da **UNAMA Parque Shopping**, o projeto visa facilitar o processo de adoção de animais por meio de uma plataforma digital interativa.
 
 ## Descrição do Projeto
 
@@ -46,28 +53,22 @@ A colaboração entre os grupos acadêmicos de Ciência da Computação e Medici
 
 ## Conclusão
 
-O projeto _"Encontre seu Pet Amigão Online"_ é uma iniciativa inovadora que visa unir pessoas interessadas em adotar animais de estimação de forma responsável e consciente. Através da colaboração entre os grupos acadêmicos, espera-se criar uma ferramenta eficaz para promover a adoção de animais e disseminar informações cruciais sobre o cuidado animal. Com isso, o projeto não apenas enriquecerá a vida de muitos animais e adotantes, mas também proporcionará uma experiência de aprendizado valiosa para a comunidade em geral.
+O projeto _"Adote um Pet Online"_ é uma iniciativa inovadora que visa unir pessoas interessadas em adotar animais de estimação de forma responsável e consciente. Através da colaboração entre os grupos acadêmicos, espera-se criar uma ferramenta eficaz para promover a adoção de animais e disseminar informações cruciais sobre o cuidado animal. Com isso, o projeto não apenas enriquecerá a vida de muitos animais e adotantes, mas também proporcionará uma experiência de aprendizado valiosa para a comunidade em geral.
+
+## Orientador
+
+- [@Erminio Augusto Ramos da Paixao](http://lattes.cnpq.br/3441462516404507)
 
 ## Equipe ciencias da computação
 
-- Marco Antônio
-
-- Gustavo Henrique
-
-- Davi Wendell
-
-- Alexsandro Fernandes
-
-- Beatriz Silva
-
-- Jean Arthur
-
-- Diosne Marlon
-
-- Kauan Leandro
-
-- Manoel Victor
-
-- Renan Tavares
-
-- Natalia
+- [@Marco Antônio](https://github.com/marco0antonio0)
+- [@Gustavo Henrique](https://github.com/gustavo-henrique-pereira-lima)
+- [@Alexsandro Fernandes](https://github.com/AlexsandroFernandesNascimento)
+- [@Jean Arthur](https://github.com/JeanArthurCostaDias)
+- [@Diosne Marlon](https://github.com/DiosneMarlon)
+- [@Kauan Leandro](https://github.com/kauanleandr)
+- [@Natalia](https://github.com/naty63194)
+- @Davi Wendell
+- @Beatriz Silva
+- @Manoel Victor
+- @Renan Tavares
