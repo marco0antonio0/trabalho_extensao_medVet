@@ -21,32 +21,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Widget_topBar />
-      <div className="colunm">
-        {/** Div principal */}
-        <div className="sessao_1">
-          {/* titulo do blog */}
-          <Widget_Label_blog titulo="De amor e carinho" />
+      <div className="colunm1">
+        <Widget_topBar />
+        <div className="colunm">
+          {/** Div principal */}
+          <div className="sessao_1">
+            {/* titulo do blog */}
+            <Widget_Label_blog titulo="De amor e carinho" />
 
-          {/* iamgem ilustrativa blog */}
-          <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" />
+            {/* iamgem ilustrativa blog */}
+            <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" />
 
-          {/* Primeiro texto */}
-          <Widegt_Post_text
-            titulo="Lorem ipsum"
-            texto={`dolor, id tristique lectus. In id pulvinar turpis, ut facilisis massa.
+            {/* Primeiro texto */}
+            <Widegt_Post_text
+              titulo="Lorem ipsum"
+              texto={`dolor, id tristique lectus. In id pulvinar turpis, ut facilisis massa.
           Nunc gravida pulvinar quam nec fermentum. Praesent facilisis mi nec
           neque porttitor, nec viverra quam porta. Cras sit amet feugiat ligula.
           Pellentesque ac aliquet sapien, non fermentum risus. Aenean at finibus
           ex. Etiam sed elit vitae purus congue vulputate. Integer magna tellus,
           tempus vitae quam ac, consectetur mattis velit. Mauris fermentum ante
           vitae congue blandit.`}
-          />
+            />
 
-          {/* Segundo Texto */}
-          <Widegt_Post_text
-            titulo="Lorem ipsum"
-            texto={`dolor, id tristique lectus. In id pulvinar turpis, ut facilisis massa.
+            {/* Segundo Texto */}
+            <Widegt_Post_text
+              titulo="Lorem ipsum"
+              texto={`dolor, id tristique lectus. In id pulvinar turpis, ut facilisis massa.
           Nunc gravida pulvinar quam nec fermentum. Praesent facilisis mi nec
           neque porttitor, nec viverra quam porta. Cras sit amet feugiat ligula.
           Pellentesque ac aliquet sapien, non fermentum risus. Aenean at finibus
@@ -62,15 +63,15 @@ export default function Home() {
           vitae congue blandit.
           vitae congue blandit.
           `}
-          />
+            />
 
-          {/*Segunda imagem ilustrativa */}
-          <Widget_Banner url_image="/images/bannerImage_cats.png" />
+            {/*Segunda imagem ilustrativa */}
+            <Widget_Banner url_image="/images/bannerImage_cats.png" />
 
-          {/* Terceiro texto */}
-          <Widegt_Post_text
-            titulo="Lorem ipsum"
-            texto={`dolor, id tristique lectus. In id pulvinar turpis, ut facilisis massa.
+            {/* Terceiro texto */}
+            <Widegt_Post_text
+              titulo="Lorem ipsum"
+              texto={`dolor, id tristique lectus. In id pulvinar turpis, ut facilisis massa.
           Nunc gravida pulvinar quam nec fermentum. Praesent facilisis mi nec
           neque porttitor, nec viverra quam porta. Cras sit amet feugiat ligula.
           Pellentesque ac aliquet sapien, non fermentum risus. Aenean at finibus
@@ -86,15 +87,16 @@ export default function Home() {
           vitae congue blandit.
           vitae congue blandit.
           `}
-          />
+            />
 
-          {/**Sessão do blog educacional   */}
-          <Widget_Blogs_section />
+            {/**Sessão do blog educacional   */}
+            <Widget_Blogs_section />
+          </div>
+
+          {/** Footer da pagina */}
         </div>
-
-        {/** Footer da pagina */}
+        <Widget_BottomBar />
       </div>
-      <Widget_BottomBar />
     </>
   );
 }

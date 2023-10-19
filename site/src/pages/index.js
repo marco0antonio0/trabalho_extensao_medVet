@@ -17,26 +17,28 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Widget_topBar />
-      <div className="colunm">
-        {/*=================================== */}
-        {/* widget do topbar */}
-        {/*=================================== */}
-        <div className="sessao_1">
+      <div className="colunm1">
+        <Widget_topBar />
+        <div className="colunm">
           {/*=================================== */}
-          {/* lista de animais */}
-          <Widget_Lista_animais />
-          {/* imagem ilustrativa */}
-          <Widget_Banner />
-          {/* imagem ilustrativa */}
-          <Widget_Blogs_section />
+          {/* widget do topbar */}
+          {/*=================================== */}
+          <div className="sessao_1">
+            {/*=================================== */}
+            {/* lista de animais */}
+            <Widget_Lista_animais />
+            {/* imagem ilustrativa */}
+            <Widget_Banner />
+            {/* imagem ilustrativa */}
+            <Widget_Blogs_section />
+            {/*=================================== */}
+          </div>
+          {/*=================================== */}
+          {/* sessão estrutura mais a abaixo */}
           {/*=================================== */}
         </div>
-        {/*=================================== */}
-        {/* sessão estrutura mais a abaixo */}
-        {/*=================================== */}
+        <Widget_BottomBar />
       </div>
-      <Widget_BottomBar />
     </>
   );
 }

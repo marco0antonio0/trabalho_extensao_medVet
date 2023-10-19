@@ -49,27 +49,29 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Widget_topBar />
-      <div className="colunm">
-        {load2 > 0 ? (
-          <div className="sessao_1">
-            {/*================================================ */}
-            <Widget_perfil data={data} />
-            <Widget_quizz data={data} />
-            {/*================================================ */}
-          </div>
-        ) : (
-          <div className="sessao_1">
-            {/*================================================ */}
-            <Widget_load_screen />
-            {/*================================================ */}
-          </div>
-        )}
-        {/*================================================= */}
-        {/* sessão estrutura mais a abaixo */}
-        {/*================================================= */}
+      <div className="colunm1">
+        <Widget_topBar />
+        <div className="colunm">
+          {load2 > 0 ? (
+            <div className="sessao_1">
+              {/*================================================ */}
+              <Widget_perfil data={data} />
+              <Widget_quizz data={data} />
+              {/*================================================ */}
+            </div>
+          ) : (
+            <div className="sessao_1">
+              {/*================================================ */}
+              <Widget_load_screen />
+              {/*================================================ */}
+            </div>
+          )}
+          {/*================================================= */}
+          {/* sessão estrutura mais a abaixo */}
+          {/*================================================= */}
+        </div>
+        <Widget_BottomBar />
       </div>
-      <Widget_BottomBar />
     </>
   );
 }

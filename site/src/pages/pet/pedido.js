@@ -69,46 +69,48 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Widget_topBar />
-      <div className="colunm">
-        {/* componente topBar */}
-        {load11 && load2 ? (
-          <div className="sessao_1">
-            {/*================================================= */}
-            {/* componente titulo Blog */}
-            <Widget_Label_blog
-              titulo={` Parabens voce passou no quizz `}
-              img="/images/icon-festa.png"
-              desc={`Sua pontuação foi de ${dx} de 10 pontos `}
-            />
-            {/*================================================= */}
-            {/* componente blog */}
-            <Widegt_Post_text
-              titulo={`Entre em contato com a ong ${data11.nome}`}
-              texto={`Ola ${ddd} parabens por ter passado no nosso quizz entre em contato com a ong responsavel pelo pet clicando no botão abaixo contato via whatsapp e informe o codigo ${data.id}-${data11.id}-${dddd} para completar sua adoção `}
-            />
-            {/*================================================= */}
-            {/* componente buttom */}
-            <Widget_btn_person
-              numero={data11.telefone}
-              codigo={`${data.id}-${data11.id}-${dddd} `}
-              nome_solicitante={ddd}
-            />
-            {/*================================================= */}
-          </div>
-        ) : (
-          <div className="sessao_1">
-            {/*================================================= */}
-            {/* componente de load */}
-            <Widget_load_screen />
-            {/*================================================= */}
-          </div>
-        )}
-        {/*================================================= */}
-        {/* sessão estrutura mais a abaixo */}
-        {/*================================================= */}
+      <div className="colunm1">
+        <Widget_topBar />
+        <div className="colunm">
+          {/* componente topBar */}
+          {load11 && load2 ? (
+            <div className="sessao_1">
+              {/*================================================= */}
+              {/* componente titulo Blog */}
+              <Widget_Label_blog
+                titulo={` Parabens voce passou no quizz `}
+                img="/images/icon-festa.png"
+                desc={`Sua pontuação foi de ${dx} de 10 pontos `}
+              />
+              {/*================================================= */}
+              {/* componente blog */}
+              <Widegt_Post_text
+                titulo={`Entre em contato com a ong ${data11.nome}`}
+                texto={`Ola ${ddd} parabens por ter passado no nosso quizz entre em contato com a ong responsavel pelo pet clicando no botão abaixo contato via whatsapp e informe o codigo ${data.id}-${data11.id}-${dddd} para completar sua adoção `}
+              />
+              {/*================================================= */}
+              {/* componente buttom */}
+              <Widget_btn_person
+                numero={data11.telefone}
+                codigo={`${data.id}-${data11.id}-${dddd} `}
+                nome_solicitante={ddd}
+              />
+              {/*================================================= */}
+            </div>
+          ) : (
+            <div className="sessao_1">
+              {/*================================================= */}
+              {/* componente de load */}
+              <Widget_load_screen />
+              {/*================================================= */}
+            </div>
+          )}
+          {/*================================================= */}
+          {/* sessão estrutura mais a abaixo */}
+          {/*================================================= */}
+        </div>
+        <Widget_BottomBar />
       </div>
-      <Widget_BottomBar />
     </>
   );
 }

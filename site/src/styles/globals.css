@@ -21,6 +21,13 @@ body {
   height: auto;
   width: 1750px;
 }
+.colunm1 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
 .sessao_1 {
   margin: auto;
   width: 90%;

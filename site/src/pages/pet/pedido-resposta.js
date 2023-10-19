@@ -20,39 +20,41 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Widget_topBar />
-      <div className="colunm">
-        {/* componente topBar */}(
-        <div className="sessao_1">
-          {/*================================================= */}
-          {/* componente titulo Blog */}
-          <Widget_Label_blog
-            titulo="Poxaaaaaa"
-            img="\images\icon-errou.png"
-            desc={`Sua pontuação foi de ${dx} de 10 pontos `}
-          />
-          {/*================================================= */}
-          {/* componente titulo Blog */}
-          <Widegt_Post_text
-            titulo={`Poxaaa as respostas que voce selecionou `}
-            texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
-          />
-          {/*================================================= */}
+      <div className="colunm1">
+        <Widget_topBar />
+        <div className="colunm">
+          {/* componente topBar */}(
+          <div className="sessao_1">
+            {/*================================================= */}
+            {/* componente titulo Blog */}
+            <Widget_Label_blog
+              titulo="Poxaaaaaa"
+              img="\images\icon-errou.png"
+              desc={`Sua pontuação foi de ${dx} de 10 pontos `}
+            />
+            {/*================================================= */}
+            {/* componente titulo Blog */}
+            <Widegt_Post_text
+              titulo={`Poxaaa as respostas que voce selecionou `}
+              texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
+            />
+            {/*================================================= */}
+            {/* sessão estrutura mais a abaixo */}
+            <Widegt_Post_text
+              titulo={`Leia nosso blog sobre cuidados basicos e tente novamente`}
+              texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
+            />
+            {/*================================================= */}
+            {/* sessão estrutura mais a abaixo */}
+            <Widget_btn_person1 />
+            {/*================================================= */}
+          </div>
+          ){/*================================================= */}
           {/* sessão estrutura mais a abaixo */}
-          <Widegt_Post_text
-            titulo={`Leia nosso blog sobre cuidados basicos e tente novamente`}
-            texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
-          />
-          {/*================================================= */}
-          {/* sessão estrutura mais a abaixo */}
-          <Widget_btn_person1 />
           {/*================================================= */}
         </div>
-        ){/*================================================= */}
-        {/* sessão estrutura mais a abaixo */}
-        {/*================================================= */}
+        <Widget_BottomBar />
       </div>
-      <Widget_BottomBar />
     </>
   );
 }
