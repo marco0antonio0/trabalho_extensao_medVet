@@ -51,7 +51,7 @@ export default function Home() {
 
             {/* Terceiro texto */}
             <Widegt_Post_text
-              titulo="Ajuda a Fortalicer Saúde Mental e Emocional"
+              titulo="Ajuda a Fortalecer Saúde Mental e Emocional"
               texto={`O amor e o carinho que damos aos nossos pets têm um impacto positivo em sua saúde mental e emocional. Eles se sentem seguros, amados e valorizados, o que ajuda a reduzir o estresse e a ansiedade em suas vidas. Animais de estimação que recebem afeto regularmente são geralmente mais felizes e confiantes.`}
             />
             <Widegt_Post_text
@@ -66,6 +66,12 @@ export default function Home() {
 - **Tempo de Qualidade:** Reserve um tempo específico para brincar, passear e interagir com seu pet. Isso demonstra que você valoriza sua companhia e está disposto a investir tempo de qualidade com ele.
 
 - **Comunicação e Compreensão:** Embora nossos pets não falem a mesma língua que nós, eles ainda respondem à nossa comunicação. Fale com eles, faça contato visual e tente entender suas necessidades e emoções.
+
+\\
+fontes:
+\\
+[LoremIpsum]()\\
+[LoremIpsum]()
 `}
             />
 

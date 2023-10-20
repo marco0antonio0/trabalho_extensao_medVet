@@ -40,7 +40,8 @@ export default function Home() {
             {/** Segundo texto */}
             <Widegt_Post_text
               titulo="Exercício para o Corpo e a Mente"
-              texto={`Os passeios diários proporcionam aos animais de estimação a oportunidade de se exercitar fisicamente e mentalmente, o que é essencial para seu bem-estar. Aqui estão alguns pontos importantes:
+              texto={`
+Os passeios diários proporcionam aos animais de estimação a oportunidade de se exercitar fisicamente e mentalmente, o que é essencial para seu bem-estar. Aqui estão alguns pontos importantes:
 
 - **Atividade física:** Os passeios oferecem uma forma de exercício regular que ajuda a manter os músculos, ossos e articulações de seu animal de estimação saudáveis. Isso é particularmente importante para cães, pois eles precisam de atividade física para gastar energia.
 
@@ -63,6 +64,11 @@ export default function Home() {
 
 - **Prevenção de comportamentos indesejados:** Animais que passeiam regularmente estão menos propensos a desenvolver comportamentos destrutivos, como roer móveis ou cavar buracos no jardim. O exercício e a estimulação mental os mantêm ocupados e satisfeitos.
 
+\\
+fontes:
+\\
+[LoremIpsum]()\\
+[LoremIpsum]()
 `}
             />
             {/** Sessão do blog educacional */}

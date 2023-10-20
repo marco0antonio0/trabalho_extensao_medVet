@@ -34,7 +34,7 @@ export default function Home() {
             />
 
             {/** Imagem ilustrativa */}
-            <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" />
+            <Widget_Banner url_image="/images/banner_image_project.svg" />
 
             {/** Primeiro texto */}
             <Widegt_Post_text
@@ -49,15 +49,14 @@ export default function Home() {
           `}
             />
 
-            {/** Imagem ilustrativa */}
-            <Widget_Banner url_image="/images/bannerImage_cats.png" />
-
             {/** Terceiro texto */}
             <Widegt_Post_text
               titulo="Impacto Acadêmico e Parcerias"
               texto={`A colaboração entre os grupos acadêmicos de Ciência da Computação e Medicina Veterinária é fundamental para o sucesso do projeto. A equipe de Ciência da Computação ficará responsável pelo desenvolvimento da plataforma e da interface do usuário, enquanto a equipe de Medicina Veterinária contribuirá com seu conhecimento especializado para elaborar as perguntas do quizz e fornecer conteúdo educacional relevante e aprimoramento dos demais requisitos e necessidades do projeto junto a equipe de ciencias da computação.
           `}
             />
+            {/** Imagem ilustrativa */}
+            <Widget_Banner url_image="/images/banner_image_project_1.svg" />
             {/** Quarto texto */}
             <Widegt_Post_text
               titulo="Equipe do projeto"
