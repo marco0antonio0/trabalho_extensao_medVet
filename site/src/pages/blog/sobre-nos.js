@@ -30,7 +30,7 @@ export default function Home() {
             <Widget_Label_blog
               titulo="Projeto adote um pet"
               desc="POSTADO POR ME ADOTE, EM SET 13, 2023"
-              img="/images/logo.png"
+              img="/images/logo.svg"
             />
 
             {/** Imagem ilustrativa */}

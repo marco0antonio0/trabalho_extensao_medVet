@@ -34,7 +34,7 @@ export default function Widget_topBar() {
         {/*============================================= */}
         {/* div logo que limita o tamanho da imagem da logo referida */}
         <div className={style.image_logo}>
-          <img src="/images/logo.png" alt="" />
+          <img src="/images/logo.svg" alt="" />
         </div>
         {/*============================================= */}
         {/* logo do tipo text */}
