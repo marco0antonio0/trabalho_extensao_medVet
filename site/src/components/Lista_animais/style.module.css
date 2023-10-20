@@ -41,6 +41,7 @@
   align-items: center;
   align-content: center;
   padding: 20px;
+  border: solid rgba(243, 149, 98, 0.5) 1px;
 }
 .card_animal:hover {
   transform: scale(105%);
