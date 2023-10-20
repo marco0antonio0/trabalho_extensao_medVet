@@ -5,15 +5,15 @@
   width: 100%;
   background-color: white;
   border-bottom: solid rgba(0, 0, 0, 0.193) 0.5px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 /* Logo "adote" */
 .topBar h1 {
-  font-weight: 500;
   margin: auto 0;
   margin-top: 35px;
   font-size: 12mm;
   color: rgba(243, 149, 98, 1);
+  font-weight: lighter;
 }
 /* container de imagem da logo */
 .image_logo {

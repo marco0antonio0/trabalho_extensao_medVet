@@ -9,9 +9,7 @@ const myFont_LondrinaSolid = localFont({
   subsets: ["latin"],
 });
 
-
 //================== MENU DO SITE =========================
-
 
 export default function Widget_topBar() {
   const [menu, setmenu] = useState(false);

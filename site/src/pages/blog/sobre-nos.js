@@ -58,6 +58,40 @@ export default function Home() {
               texto={`A colaboração entre os grupos acadêmicos de Ciência da Computação e Medicina Veterinária é fundamental para o sucesso do projeto. A equipe de Ciência da Computação ficará responsável pelo desenvolvimento da plataforma e da interface do usuário, enquanto a equipe de Medicina Veterinária contribuirá com seu conhecimento especializado para elaborar as perguntas do quizz e fornecer conteúdo educacional relevante e aprimoramento dos demais requisitos e necessidades do projeto junto a equipe de ciencias da computação.
           `}
             />
+            {/** Quarto texto */}
+            <Widegt_Post_text
+              titulo="Equipe do projeto"
+              texto={`
+O projeto _"Adote um Pet Online"_ é uma iniciativa inovadora que visa unir pessoas interessadas em adotar animais de estimação de forma responsável e consciente. Através da colaboração entre os grupos acadêmicos, espera-se criar uma ferramenta eficaz para promover a adoção de animais e disseminar informações cruciais sobre o cuidado animal. Com isso, o projeto não apenas enriquecerá a vida de muitos animais e adotantes, mas também proporcionará uma experiência de aprendizado valiosa para a comunidade em geral.
+              
+## Orientador
+
+- [@Erminio Augusto](http://lattes.cnpq.br/3441462516404507)
+  - 
+
+## Equipe ciencias da computação
+
+- [@Marco Antônio](https://github.com/marco0antonio0)
+    -
+- [@Gustavo Henrique](https://github.com/gustavo-henrique-pereira-lima)
+    -
+- [@Alexsandro Fernandes](https://github.com/AlexsandroFernandesNascimento)
+    -
+- [@Jean Arthur](https://github.com/JeanArthurCostaDias)
+    -
+- [@Diosne Marlon](https://github.com/DiosneMarlon)
+    -
+- [@Kauan Leandro](https://github.com/kauanleandr)
+    -
+- @Davi Wendell
+    -
+- @Beatriz Silva
+    -
+- @Manoel Victor
+    -
+- @Renan Tavares
+    -        `}
+            />
 
             {/** Sessão do blog educacional */}
             <Widget_Blogs_section />

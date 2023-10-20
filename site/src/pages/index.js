@@ -25,6 +25,8 @@ export default function Home() {
           {/*=================================== */}
           <div className="sessao_1">
             {/*=================================== */}
+            {/* imagem ilustrativa */}
+            <Widget_Banner url_image="images/bannerImagemInicio.svg" />
             {/* lista de animais */}
             <Widget_Lista_animais />
             {/* imagem ilustrativa */}

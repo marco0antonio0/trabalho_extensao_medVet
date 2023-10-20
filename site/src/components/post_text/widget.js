@@ -1,5 +1,6 @@
 // ======== Sessão de texto ========= //
 
+import Markdown from "react-markdown";
 import style from "./style.module.css";
 export default function Widegt_Post_text({ texto = "", titulo = "" }) {
   return (
@@ -9,7 +10,7 @@ export default function Widegt_Post_text({ texto = "", titulo = "" }) {
           <img src="/images/icon_patinha.png" alt="" />
           <h1>{titulo}</h1>
         </div>
-        <p>{texto}</p>
+        <Markdown>{texto}</Markdown>
       </div>
     </>
   );
