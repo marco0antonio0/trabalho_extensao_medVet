@@ -50,11 +50,14 @@ export default function Widget_quizz({ data }) {
     },
     {
       //=================================================================================================================
-      pergunta: "Durante a vida do animal irei",
+      pergunta: "Durante a vida do animal irei:",
       opcoes: [
-        ["concordo em arca com custos para o animal apenas alimentação", 0.5],
         [
-          "concordo em arca com custos para o animal apennas alimentação,veterinario e brinquedos",
+          "concordar em arca com custos para o animal apenas com alimentação",
+          0.5,
+        ],
+        [
+          "concordar em arca com custos para o animal de alimentação,veterinario e brinquedos",
           1.0,
         ],
         [
@@ -70,12 +73,15 @@ export default function Widget_quizz({ data }) {
         "Durante os primeiros dias do animal em sua residencial, oque voce acha correto se o animalzinho agir de formas imprevistas como latir excessivamente,arranhar móveis,fazer necessidades onde não deveria",
       // "Você está ciente de que o animal é um ser irracional que durante o período de adaptação pode agir de formas imprevistas (arranhar móveis, latidos ou miados excessivos, soltura de pelos e fazer necessidades onde não deveria)?",
       opcoes: [
-        ["irei educa-lo(a) batendo nele porque é o correto a se fazer", 0.0],
         [
-          "irei respirar fundo e  educa-lo(a) redirecionando para outras atividades que acho mais uteis",
+          "irei bater no animal para educa-lo(a) porque é o correto a se fazer",
+          0.0,
+        ],
+        [
+          "irei respirar fundo e  educa-lo(a) redirecionando para outras atividades",
           1.0,
         ],
-        ["irei procurar ajuda para entender melhor como educa-lo", 1.0],
+        ["irei procurar ajuda para entender melhor como educa-lo(a)", 1.0],
       ],
       //=================================================================================================================
     },
@@ -87,7 +93,7 @@ export default function Widget_quizz({ data }) {
         ["irei abandona-lo", 0.0],
         [
           "irei ver a melhor possibilidade para o bem do animal devolvendo para ong/abrigo",
-          0.5,
+          0.0,
         ],
         [
           "Verifiquei e não tem nenhuma pessoa em minha residencia que tenha alergia ao animal que quero adotar ",
@@ -98,10 +104,10 @@ export default function Widget_quizz({ data }) {
     },
     {
       //=================================================================================================================
-      pergunta: "Caso o animal adotado cresça mais que o previsto",
+      pergunta: "Caso o animal adotado cresça mais que o previsto:",
       opcoes: [
         [
-          "não concordo e irei devolve-lo pois não quero um animal grande em casa",
+          "não concordo e irei devolve-lo(a) pois não quero um animal grande em casa",
           0.0,
         ],
         [
@@ -112,7 +118,7 @@ export default function Widget_quizz({ data }) {
       //=================================================================================================================
     },
     {
-      pergunta: "Em sua residencia voce pode:",
+      pergunta: "Em sua residencia:",
       opcoes: [
         ["não posso oferece segurança para o animal", 0.0],
         ["posso oferece segurança para o animal", 1.0],
@@ -250,7 +256,7 @@ export default function Widget_quizz({ data }) {
                 seterro(false);
                 // =============================================================
                 //      verificação se pontos totais validos
-                if (cont < 5) {
+                if (cont < 6) {
                   r.push(`/pet/pedido-resposta?dx=${cont}`);
                 } else {
                   r.push(
