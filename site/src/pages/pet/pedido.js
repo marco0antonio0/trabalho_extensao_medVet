@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Widget_load_screen from "@/components/load/widget";
 import Widget_btn_person from "@/components/widget_btn/widget";
 import { config_api } from "@/model/get_api";
+import Widget_Banner from "@/components/banner/widget";
 
 export default function Home() {
   const [data, setdata] = useState([]);
@@ -82,6 +83,9 @@ export default function Home() {
                 img="/images/icon-festa.png"
                 desc={`Sua pontuação foi de ${dx} de 10 pontos `}
               />
+              {/*================================================= */}
+              {/* imagem ilustrativa */}
+              <Widget_Banner url_image="/images/banneraprovado.svg" />
               {/*================================================= */}
               {/* componente blog */}
               <Widegt_Post_text

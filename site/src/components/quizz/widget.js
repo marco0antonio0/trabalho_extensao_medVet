@@ -4,6 +4,8 @@ import { useState } from "react";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
 import localFont from "next/font/local";
+import ReCAPTCHA from "react-google-recaptcha";
+import { perguntas } from "./perguntas";
 const myFont_LilitaOne = localFont({
   src: "./../../fonts/LilitaOne-Regular.ttf",
   subsets: ["latin"],
@@ -14,7 +16,6 @@ const myFont_LondrinaSolid = localFont({
   src: "./../../fonts/LondrinaSolid-Regular.ttf",
   subsets: ["latin"],
 });
-
 // Função quiz
 export default function Widget_quizz({ data }) {
   const r = useRouter();
@@ -22,142 +23,23 @@ export default function Widget_quizz({ data }) {
   const [nome, setnome] = useState("");
   const [telefone, settelefone] = useState("");
   const [erro, seterro] = useState(false);
-  const perguntas = [
-    {
-      //=================================================================================================================
-      pergunta:
-        "Você tem consciência de que cães e gatos podem viver mais de 15 anos e que você terá total responsabilidade(legal,etica e financeira) durante toda vida do animal?",
-      opcoes: [
-        ["sim", 1.0],
-        ["nao", 0.0],
-      ],
-      //=================================================================================================================
-    },
-    {
-      //=================================================================================================================
-      pergunta: "Sobre passeios e brincadeiras com o animal eu acho que:",
-      opcoes: [
-        [
-          "Não tem necessidade de passear ou brincar com o animal pois ele(a) ja tem um esaço grande em casa",
-          0.0,
-        ],
-        [
-          "irei passear e brincar regularmente com o animal  porque vejo necessidade nisso de o animal ter uma vida ativa(passeios, interações sociais e dinâmicas)",
-          1.0,
-        ],
-      ],
-      //=================================================================================================================
-    },
-    {
-      //=================================================================================================================
-      pergunta: "Durante a vida do animal irei:",
-      opcoes: [
-        [
-          "concordar em arca com custos para o animal apenas com alimentação",
-          0.5,
-        ],
-        [
-          "concordar em arca com custos para o animal de alimentação,veterinario e brinquedos",
-          1.0,
-        ],
-        [
-          "não concordo em arca com custos para o animal,irei dar comida apenas quando puder",
-          0.0,
-        ],
-      ],
-      //=================================================================================================================
-    },
-    {
-      //=================================================================================================================
-      pergunta:
-        "Durante os primeiros dias do animal em sua residencial, oque voce acha correto se o animalzinho agir de formas imprevistas como latir excessivamente,arranhar móveis,fazer necessidades onde não deveria",
-      // "Você está ciente de que o animal é um ser irracional que durante o período de adaptação pode agir de formas imprevistas (arranhar móveis, latidos ou miados excessivos, soltura de pelos e fazer necessidades onde não deveria)?",
-      opcoes: [
-        [
-          "irei bater no animal para educa-lo(a) porque é o correto a se fazer",
-          0.0,
-        ],
-        [
-          "irei respirar fundo e  educa-lo(a) redirecionando para outras atividades",
-          1.0,
-        ],
-        ["irei procurar ajuda para entender melhor como educa-lo(a)", 1.0],
-      ],
-      //=================================================================================================================
-    },
-    {
-      //=================================================================================================================
-      pergunta:
-        "Caso alguem proximo em sua residencia venha a ter uma alergia ao animal adotado ",
-      opcoes: [
-        ["irei abandona-lo", 0.0],
-        [
-          "irei ver a melhor possibilidade para o bem do animal devolvendo para ong/abrigo",
-          0.0,
-        ],
-        [
-          "Verifiquei e não tem nenhuma pessoa em minha residencia que tenha alergia ao animal que quero adotar ",
-          1.0,
-        ],
-      ],
-      //=================================================================================================================
-    },
-    {
-      //=================================================================================================================
-      pergunta: "Caso o animal adotado cresça mais que o previsto:",
-      opcoes: [
-        [
-          "não concordo e irei devolve-lo(a) pois não quero um animal grande em casa",
-          0.0,
-        ],
-        [
-          "entendo que existe essa possibilidade do animal crescer mais que o previsto e irei sempre ama-lo",
-          1.0,
-        ],
-      ],
-      //=================================================================================================================
-    },
-    {
-      pergunta: "Em sua residencia:",
-      opcoes: [
-        ["não posso oferece segurança para o animal", 0.0],
-        ["posso oferece segurança para o animal", 1.0],
-      ],
-      //=================================================================================================================
-    },
-    {
-      pergunta: "Oque voce acha sobre castração de animais:",
-      opcoes: [
-        [
-          "Muito importante pois ajuda a diminuir a possibilidade de filhotinhos inesperados e ajuda a previnir futuras doenças",
-          1.0,
-        ],
-        [
-          "Não é util pois posso dar 'anti-cio/anticoncepcional' para meu cachorro(a)/gato(a) ",
-          0.0,
-        ],
-        ["Não é util so é perda de tempo", 0.0],
-      ],
-      //=================================================================================================================
-    },
-    {
-      pergunta: "Em caso de viagens, o animal fica sozinho em sua residencia ?",
-      opcoes: [
-        ["sim", 0.0],
-        ["nao", 1.0],
-      ],
-      //=================================================================================================================
-    },
-    {
-      pergunta: "Você tem certeza da adoção?",
-      opcoes: [
-        ["sim", 1.0],
-        ["nao", 0.0],
-      ],
-      //=================================================================================================================
-    },
-  ];
-
+  const [erroTelefone, seterroTelefone] = useState(false);
+  const [erroNome, seterroNome] = useState(false);
+  const [erroCampos, seterroCampos] = useState(false);
+  const [erroRecaptcha, seterroRecaptcha] = useState(false);
+  const type_erros = {
+    erroGererico: ">> Preencha todos os campos",
+    erroCampoNome: ">> Campo 'Qual seu nome' não preenchido ou incompleto",
+    erroCampoTelefone:
+      ">> Campo 'Numero para contato' não preenchido ou incompleto",
+    erroCampoQuizz: ">> Campos de 'perguntas' não preenchido ou incompleto",
+  };
+  function FNclearErros() {
+    seterroTelefone(false);
+    seterroCampos(false);
+    seterroNome(false);
+    seterro(false);
+  }
   return (
     <>
       <div className={style.container_0}>
@@ -181,7 +63,7 @@ export default function Widget_quizz({ data }) {
             value={nome}
             onChange={(e) => {
               setnome(e.target.value);
-              seterro(false);
+              FNclearErros();
             }}
           />
         </div>
@@ -195,7 +77,7 @@ export default function Widget_quizz({ data }) {
             value={telefone}
             onChange={(e) => {
               settelefone(e.target.value);
-              seterro(false);
+              FNclearErros();
             }}
           />
         </div>
@@ -214,7 +96,7 @@ export default function Widget_quizz({ data }) {
                     instance[i] = e.target.value;
                     return instance;
                   });
-                  seterro(false);
+                  FNclearErros();
                 }}
               >
                 <option value={null}>{"selecione"}</option>
@@ -229,19 +111,57 @@ export default function Widget_quizz({ data }) {
             </div>
           );
         })}
-        <div
-          className={` ${style.error_msg} ${
-            !erro ? style.error_msg_disable : null
-          }`}
-        >
-          <h2>Preencha todos os campos</h2>
+        {/*================================================= */}
+        {/*       Recaptcha div */}
+        <div className={style.generic_container}>
+          <div className={style.ReCAPTCHADiv}>
+            {/*       Recaptcha elements */}
+            <ReCAPTCHA
+              sitekey="6LfCsLwoAAAAANDpSjLX3be4Mfclgmwi3qT9f3jh"
+              onChange={(e) => {
+                seterroRecaptcha(e);
+              }}
+            />
+          </div>
         </div>
+        {/*================================================= */}
+        <div className={style.generic_container}>
+          {/*================================================= */}
+          {/*           DIV mensagem de error */}
+          <div
+            className={` ${style.error_msg} ${
+              !erroNome ? style.error_msg_disable : null
+            }`}
+          >
+            <h2>{type_erros.erroCampoNome}</h2>
+          </div>
+          <div
+            className={` ${style.error_msg} ${
+              !erroTelefone ? style.error_msg_disable : null
+            }`}
+          >
+            <h2>{type_erros.erroCampoTelefone}</h2>
+          </div>
+          <div
+            className={` ${style.error_msg} ${
+              !erroCampos ? style.error_msg_disable : null
+            }`}
+          >
+            <h2>{type_erros.erroCampoQuizz}</h2>
+          </div>
+          {/*================================================= */}
+        </div>
+
+        {/*================================================= */}
+        {/*       BTN >> enviar respostas */}
         <div
           className={style.btn_plus}
           onClick={() => {
             let pass = true;
             var cont = 0.0;
             try {
+              // ===================================================
+              // faz a verificação de pontos e coloca na VAR 'cont'
               res.map((e) => {
                 if (typeof e == typeof undefined || e == "selecione") {
                   pass = false;
@@ -249,11 +169,33 @@ export default function Widget_quizz({ data }) {
                   cont += parseInt(e);
                 }
               });
+              // ===================================================
+              // monitoramento de vars
+              // ===================================================
+              // seta o status true||false na vars 'erroCampos'
+              seterroCampos(!pass);
+              // seta o status true||false na vars 'erroNome'
+              if (nome.length < 3) {
+                seterroNome(true);
+              } else {
+                seterroNome(false);
+              }
+              // seta o status true||false na vars 'erroTelefone'
+              if (telefone.length < 7) {
+                seterroTelefone(true);
+              } else {
+                seterroTelefone(false);
+              }
+              console.log(erroCampos);
+              // ===================================================
               // =============================================================
-              //        verificação se campos validos >> nome e telefone
-              if (nome.length > 3 && telefone.length >= 7 && pass) {
-                console.log(cont);
-                seterro(false);
+              //        verificação se campos validos >> nome e telefone e Recaptcha
+              if (
+                nome.length > 3 &&
+                telefone.length >= 7 &&
+                pass &&
+                erroRecaptcha
+              ) {
                 // =============================================================
                 //      verificação se pontos totais validos
                 if (cont < 6) {
@@ -270,7 +212,7 @@ export default function Widget_quizz({ data }) {
               }
               // =============================================================
             } catch (error) {
-              seterro(true);
+              seterroCampos(true);
             }
           }}
         >
