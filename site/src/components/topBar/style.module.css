@@ -57,21 +57,20 @@ uma determinada largura de tela ser reduzia  */
 }
 /* popup menu quer aparece apos o clique no botão  >> menu_laytou_menor*/
 .menu {
-  position: absolute;
-
-  height: auto;
-  width: 300px;
-  background-color: white;
-  margin: auto;
-  margin-right: 0;
-  margin-top: 90px;
-  align-content: center;
-  align-items: center;
   display: none;
   flex-direction: column;
-  padding-top: 20px;
-  border-left: solid rgba(0, 0, 0, 0.177) 0.1px;
-  border-bottom: solid rgba(0, 0, 0, 0.177) 0.1px;
+  position: absolute;
+  height: auto;
+  width: 150px;
+  /* width: 50px; */
+  border: solid rgba(0, 0, 0, 0.177) 0.1px;
+  padding: 10px 30px;
+  margin-left: 10px;
+  background-color: white;
+  margin-top: 95px;
+  align-content: center;
+  align-items: center;
+  border-radius: 25px;
 }
 /* elementos do popup menu */
 .menu h2 {
@@ -182,14 +181,13 @@ uma determinada largura de tela ser reduzia  */
 }
 @media (max-width: 690px) {
   .menu {
-    width: 250px;
     font-size: 4mm;
   }
 }
 @media (max-width: 550px) {
   .menu {
-    width: 230px;
-    font-size: 3mm;
+    width: 100px;
+    font-size: 3.5mm;
   }
   .topBar h1 {
     font-size: 8mm;
