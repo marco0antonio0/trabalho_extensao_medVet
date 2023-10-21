@@ -32,7 +32,7 @@ export default function Home() {
             <Widget_Lista_animais />
             {/* imagem ilustrativa */}
             <Widget_Banner />
-            {/* imagem ilustrativa */}
+            {/* sessão do blogs */}
             <Widget_Blogs_section />
             {/*=================================== */}
           </div>
