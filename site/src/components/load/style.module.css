@@ -1,7 +1,12 @@
 .container_0 {
-  height: 60em;
+  /* background-color: #51d4db; */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
 }
-
+.container_0 h2 {
+  margin: auto;
+}
 /*==================================== */
 /*  contaienr loading components */
 /*==================================== */
@@ -12,7 +17,7 @@
   flex-direction: row;
   align-items: center;
   align-content: center;
-  margin-top: 300px;
+  margin: auto;
 }
 /*==================================== */
 /*        animação loading */

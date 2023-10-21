@@ -9,10 +9,10 @@ export default function Widget_load_screen() {
         <div className={style.container_cloader}>
           <div className={style.cloader}></div>
         </div>
-        <h2>
+        {/* <h2>
           carregando <br />
           caso demore muito verifique se o link esta correto
-        </h2>
+        </h2> */}
       </div>
     </>
   );

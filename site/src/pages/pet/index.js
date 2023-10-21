@@ -14,27 +14,53 @@ export default function Home() {
   const [data, setdata] = useState([]);
   const [load, setload] = useState(false);
   const [load2, setload2] = useState(false);
+  const [notfound, setnotfound] = useState(false);
   useEffect(() => {
     if (!load && id) {
+      // =======================================
+      // faz a chamada api
       config_api.get(`/api/one-consulta-dados?id=${id}`).then((e) => {
         try {
-          let d = e.data[0];
-          if (d.tipo == "c") {
-            d.tipo = "cachorro";
+          //========================================================
+          // caso retorne algum conteudo legivel
+          if (e.data.length > 0) {
+            //========================================================
+            // faz o armazenamento na var d e pega a primeira posição
+            let d = e.data[0];
+            console.log(e.data.length);
+            //========================================================
+            // formatação das vars
+            if (d.tipo == "c") {
+              d.tipo = "cachorro";
+            } else {
+              d.tipo = "gato";
+            }
+            if (d.genero == "M") {
+              d.genero = "macho";
+            } else {
+              d.genero = "femea";
+            }
+            //========================================================
+            // setando parametro data
+            setdata(d);
+            // validação 1
+            if (d.nome.length > 0) {
+              setload2(true);
+            }
+            // validação 2
+            setload(true);
           } else {
-            d.tipo = "gato";
+            //===================================
+            // caso não retorne conteudo nenhum
+            // direciona o usuario para pagina de erro
+            r.push("/404");
           }
-          if (d.genero == "M") {
-            d.genero = "macho";
-          } else {
-            d.genero = "femea";
-          }
-          setdata(d);
-          if (d.nome.length > 0) {
-            setload2(true);
-          }
-          setload(true);
-        } catch (error) {}
+        } catch (error) {
+          //===================================
+          // caso de erro
+          // direciona o usuario para pagina de erro
+          r.push("/404");
+        }
       });
     }
   });
@@ -55,21 +81,24 @@ export default function Home() {
           {load2 > 0 ? (
             <div className="sessao_1">
               {/*================================================ */}
+              {/* perfil de pets */}
               <Widget_perfil data={data} />
+              {/*====================================== */}
+              {/* sessão de perguntas  */}
               <Widget_quizz data={data} />
               {/*================================================ */}
             </div>
           ) : (
             <div className="sessao_1">
               {/*================================================ */}
+              {/* tela de carregamento */}
               <Widget_load_screen />
               {/*================================================ */}
             </div>
           )}
           {/*================================================= */}
-          {/* sessão estrutura mais a abaixo */}
-          {/*================================================= */}
         </div>
+        {/* bottombar */}
         <Widget_BottomBar />
       </div>
     </>
