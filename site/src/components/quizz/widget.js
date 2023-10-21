@@ -19,7 +19,18 @@ const myFont_LondrinaSolid = localFont({
 // Função quiz
 export default function Widget_quizz({ data }) {
   const r = useRouter();
-  const [res, setres] = useState([]);
+  const [res, setres] = useState([
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ]);
   const [nome, setnome] = useState("");
   const [telefone, settelefone] = useState("");
   const [erro, seterro] = useState(false);
@@ -162,13 +173,22 @@ export default function Widget_quizz({ data }) {
             try {
               // ===================================================
               // faz a verificação de pontos e coloca na VAR 'cont'
-              res.map((e) => {
-                if (typeof e == typeof undefined || e == "selecione") {
-                  pass = false;
-                } else {
-                  cont += parseInt(e);
-                }
-              });
+              if (res.length > 0) {
+                res.map((e) => {
+                  if (
+                    e === typeof undefined ||
+                    e == "selecione" ||
+                    e === null
+                  ) {
+                    pass = false;
+                  } else {
+                    cont += parseInt(e);
+                  }
+                });
+              } else {
+                pass = false;
+              }
+
               // ===================================================
               // monitoramento de vars
               // ===================================================
@@ -186,7 +206,6 @@ export default function Widget_quizz({ data }) {
               } else {
                 seterroTelefone(false);
               }
-              console.log(erroCampos);
               // ===================================================
               // =============================================================
               //        verificação se campos validos >> nome e telefone e Recaptcha
