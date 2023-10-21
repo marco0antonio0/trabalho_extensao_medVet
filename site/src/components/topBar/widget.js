@@ -23,14 +23,14 @@ export default function Widget_topBar() {
         {/* menu reduzido */}
         {/* se trata de uma imagem com ação de clique */}
         {/* apos clicar muda o estado true:false */}
-        <div
+        <button
           className={`${style.menu_laytou_menor} `}
           onClick={() => {
             setmenu(menu ? false : true);
           }}
         >
           <img src="/images/btn_menu.svg" alt="" />
-        </div>
+        </button>
         {/*============================================= */}
         {/* div logo que limita o tamanho da imagem da logo referida */}
         <div className={style.image_logo}>
