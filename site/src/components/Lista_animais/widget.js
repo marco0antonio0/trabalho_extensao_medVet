@@ -24,7 +24,7 @@ const myFont_LakkiReddy = localFont({
 export default function Widget_Lista_animais() {
   const [data, setdata] = useState([]);
   const [load, setload] = useState(false);
-  const [count, setcount] = useState(2);
+  const [count, setcount] = useState(4);
   const r = useRouter();
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export default function Widget_Lista_animais() {
             onClick={() => {
               count < data.length
                 ? setcount((e) => {
-                    return e + 3;
+                    return e + 4;
                   })
                 : null;
             }}
