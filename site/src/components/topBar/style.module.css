@@ -165,7 +165,7 @@ uma determinada largura de tela ser reduzia  */
     height: 80px;
     margin: auto;
     margin-right: -25px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 8px;
     cursor: pointer;
   }
@@ -174,16 +174,6 @@ uma determinada largura de tela ser reduzia  */
     border: none;
     box-shadow: none;
     transform: scale(1.1);
-  }
-  .menu_laytou_menor img {
-    outline: none;
-    border: none;
-    box-shadow: none;
-    user-select: none;
-    height: 40%;
-    width: auto;
-    margin: auto;
-    filter: opacity(150%);
   }
 
   .menu {
@@ -211,8 +201,8 @@ uma determinada largura de tela ser reduzia  */
 }
 @media (max-width: 480px) {
   .menu_laytou_menor {
-    margin-right: -25px;
-    margin-left: 20px;
+    /* margin-right: -25px;
+    margin-left: 20px; */
   }
 }
 @media (max-width: 410px) {

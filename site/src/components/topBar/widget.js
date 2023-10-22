@@ -2,6 +2,7 @@ import { useState } from "react";
 import style from "./style.module.css";
 import { useRouter } from "next/router";
 import localFont from "next/font/local";
+import GifPlayer from "./buttomAnimed/widget";
 
 // LondrinaSolid
 const myFont_LondrinaSolid = localFont({
@@ -13,8 +14,11 @@ const myFont_LondrinaSolid = localFont({
 
 export default function Widget_topBar() {
   const [menu, setmenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const r = useRouter();
-
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       {/* ======================================================= */}
@@ -23,13 +27,14 @@ export default function Widget_topBar() {
         {/* menu reduzido */}
         {/* se trata de uma imagem com ação de clique */}
         {/* apos clicar muda o estado true:false */}
+
         <button
           className={`${style.menu_laytou_menor} `}
           onClick={() => {
             setmenu(menu ? false : true);
           }}
         >
-          <img src="/images/btn_menu.svg" alt="" />
+          <GifPlayer isOpen={!menu ? false : true} />
         </button>
         {/*============================================= */}
         {/* div logo que limita o tamanho da imagem da logo referida */}

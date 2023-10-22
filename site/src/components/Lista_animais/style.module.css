@@ -71,6 +71,7 @@
 }
 /*    card > images > img */
 .container_image img {
+  border-radius: 20px;
   width: 100%;
   height: 250px;
   object-fit: cover;
@@ -108,7 +109,7 @@
   font-weight: 200;
 }
 /* ação apos o mouse esta em cima da div */
-.btn_plus:hover {
+.btn_plus:active {
   transform: scale(105%);
 }
 /*==================================== */
@@ -186,6 +187,12 @@
     width: 500px;
   }
 }
+@media (max-width: 650px) {
+  .card_animal {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
 @media (max-width: 600px) {
   .container_menu h1 {
     font-size: 6.5mm;
@@ -196,9 +203,7 @@
 }
 @media (max-width: 590px) {
   .card_animal {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 38%;
+    width: 180px;
   }
   .card_animal p {
     font-size: 3mm;
@@ -214,9 +219,19 @@
     gap: 10px;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 530px) {
   .card_animal {
-    width: 35%;
+    width: 160px;
+  }
+}
+@media (max-width: 485px) {
+  .card_animal {
+    width: 140px;
+  }
+  @media (max-width: 430px) {
+    .card_animal {
+      width: 120px;
+    }
   }
 
   .card_animal p {
@@ -226,16 +241,28 @@
     gap: 10px;
   }
 }
+@media (max-width: 390px) {
+  .card_animal {
+    width: 115px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
 @media (max-width: 360px) {
   .card_animal {
-    width: 35%;
+    width: 150px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    max-height: 250px;
   }
+
   .container_0,
   .container_menu {
     width: 100%;
   }
   .card_animal h2 {
-    margin-top: -5px;
+    margin-top: 10px;
+    font-size: 7mm;
   }
   .card_animal p {
     margin-top: 0;

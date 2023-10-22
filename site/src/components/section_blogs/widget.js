@@ -34,7 +34,26 @@ function ItemCards({ titulo, url_image }) {
 
 export default function Widget_Blogs_section() {
   const r = useRouter();
-
+  // ==============================================================
+  // const Blogs = [
+  //   {
+  //     titulo: "PASSEAR TAMBEM É BOM PRA ELES",
+  //     img: '"/images/imageBlog_1.png',
+  //     url_push: "/blog/boas-praticas",
+  //   },
+  //   {
+  //     titulo: "PASSEAR TAMBEM É BOM PRA ELES",
+  //     img: '"/images/imageBlog_1.png',
+  //     url_push: "/blog/boas-praticas",
+  //   },
+  //   {
+  //     titulo: "PASSEAR TAMBEM É BOM PRA ELES",
+  //     img: '"/images/imageBlog_1.png',
+  //     url_push: "/blog/boas-praticas",
+  //   },
+  // ];
+  // ==============================================================
+  // ==============================================================
   return (
     <>
       <div className={style.container_0}>
@@ -46,18 +65,20 @@ export default function Widget_Blogs_section() {
           BLOG EDUCACIONAL
         </h1>
         <div className={style.container_cards}>
+          {/*============================================== */}
           <div
             className={style.item_card}
             onClick={() => {
               r.push("/blog/boas-praticas");
             }}
           >
-             {/** Desclaração da função intem card */}
+            {/** Desclaração da função intem card */}
             <ItemCards
               url_image="/images/imageBlog_1.png"
               titulo="PASSEAR TAMBEM É BOM PRA ELES"
             />
           </div>
+          {/*============================================== */}
           <div
             className={style.item_card}
             onClick={() => {
@@ -70,6 +91,7 @@ export default function Widget_Blogs_section() {
               titulo="CUIDE DO SEU PELUDINHO"
             />
           </div>
+          {/*============================================== */}
           <div
             className={`${style.item_card} ${style.status_item}`}
             onClick={() => {
@@ -82,7 +104,9 @@ export default function Widget_Blogs_section() {
               titulo="DÊ AMOR E CARINHO"
             />
           </div>
+          {/*============================================== */}
         </div>
+        {/*============================================== */}
         <div
           className={style.container_ItemCards}
           onClick={() => {
@@ -100,8 +124,8 @@ export default function Widget_Blogs_section() {
             DÊ AMOR E CARINHO
           </h2>
         </div>
+        {/*============================================== */}
       </div>
     </>
   );
 }
-
