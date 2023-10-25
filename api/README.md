@@ -32,6 +32,36 @@ clique no topico que deseja acesso
     - Polimento e Preparação para Lançamento
     - Captação de parcerias como ONGs e Abrigos na região de belém do Pará
 
+## Api-docs
+<table>
+  <tr>
+    <th>Nome da Rota</th>
+    <th>Descrição</th>
+    <th>Retorno de Sucesso</th>
+    <th>Retorno de Falha</th>
+  </tr>
+  <tr>
+    <td>consulta-dados</td>
+    <td>Exibe todos os animais listados que estão disponíveis para adoção.</td>
+    <td>Todos os dados dos animais que estão disponíveis para adoção.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>one-consulta-dados</td>
+    <td>Exibe apenas o animal especificado que está listado e disponível para adoção.</td>
+    <td>Apenas os dados do animal especificado.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>one-consulta-dados-ong</td>
+    <td>Exibe apenas a ONG especificada que está listada e em guarda do pet.</td>
+    <td>Apenas os dados da ONG especificada.</td>
+    <td></td>
+  </tr>
+</table>
+
+
+
 
 ## Justificativa
 
