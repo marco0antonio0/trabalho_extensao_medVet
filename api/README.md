@@ -81,4 +81,20 @@ Esta documentação fornece orientações claras sobre como utilizar as rotas da
 
 O Next.js se demonstrou uma excelente escolha para o desenvolvimento do projeto, visto que ofereceu diversos recursos e vantagens para os desenvolvedores do projeto.
 
+## Orientador
 
+- [@Erminio Augusto Ramos da Paixao](http://lattes.cnpq.br/3441462516404507)
+
+## Equipe ciencias da computação
+
+- [@Marco Antônio](https://github.com/marco0antonio0)
+- [@Gustavo Henrique](https://github.com/gustavo-henrique-pereira-lima)
+- [@Alexsandro Fernandes](https://github.com/AlexsandroFernandesNascimento)
+- [@Jean Arthur](https://github.com/JeanArthurCostaDias)
+- [@Diosne Marlon](https://github.com/DiosneMarlon)
+- [@Kauan Leandro](https://github.com/kauanleandr)
+- [@Natalia](https://github.com/naty63194)
+- @Davi Wendell
+- @Beatriz Silva
+- @Manoel Victor
+- @Renan Tavares
