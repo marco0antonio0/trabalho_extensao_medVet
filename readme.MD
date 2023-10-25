@@ -55,6 +55,19 @@ Além disso, o Next.js se destaca na criação de uma API segura e bem estrutura
 
 A colaboração entre os grupos acadêmicos de Ciência da Computação e Medicina Veterinária é fundamental para o sucesso do projeto. A equipe de Ciência da Computação ficará responsável pelo desenvolvimento da plataforma e da interface do usuário, enquanto a equipe de Medicina Veterinária contribuirá com seu conhecimento especializado para elaborar as perguntas do quizz e fornecer conteúdo educacional relevante e aprimoramento dos demais requisitos e necessidades do projeto junto a equipe de ciencias da computação.
 
+## Justificativa do uso do framework **next.js**
+
+- **Implantação Simplificada:** O Next.js facilitou o processo de deploy para os desenvolvedores, visto os recursos de enpacotamento e otimização integrados na ferramenta.
+
+- **Desenvolvimento Full-Stack:** A escolha pelo Next.js simplificou o desenvolvimento full-stack da aplicação, permitindo o desenvolvimento isolado do backend e do front end.
+
+- **Experiência Prévia com a Ferramenta:** Um dos principais motivos pela escolha do framework foi devido à experiência prévia dos desenvolvedores envolvidos com a ferramenta. 
+
+- **Comunidade Forte e Consistente:** Devido a popularidade do framework e a comunidade sólida e consistente, a facilidade para encontrar suporte para possíveis erros foi um dos fatores cruciais para a escolha do framework.
+
+O Next.js se demonstrou uma excelente escolha para o desenvolvimento do projeto, visto que ofereceu diversos recursos e vantagens para os desenvolvedores do projeto.
+
+
 ## Conclusão
 
 O projeto _"Adote um Pet Online"_ é uma iniciativa inovadora que visa unir pessoas interessadas em adotar animais de estimação de forma responsável e consciente. Através da colaboração entre os grupos acadêmicos, espera-se criar uma ferramenta eficaz para promover a adoção de animais e disseminar informações cruciais sobre o cuidado animal. Com isso, o projeto não apenas enriquecerá a vida de muitos animais e adotantes, mas também proporcionará uma experiência de aprendizado valiosa para a comunidade em geral.
