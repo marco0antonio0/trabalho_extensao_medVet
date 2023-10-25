@@ -34,7 +34,11 @@ Escolha a seção que deseja acessar:
 
 ## API - Documentação
 
-A documentação a seguir descreve as rotas da API, fornecendo informações essenciais para interagir com os mecanismos de consulta e segurança do projeto.
+A documentação a seguir descreve as rotas da API, fornecendo informações essenciais para interagir com os mecanismos de consulta e segurança do projeto. 
+
+**O que é uma Rota em uma API?**
+
+Uma rota em uma API é um caminho ou URL específico que os clientes (como aplicativos ou sistemas) podem acessar para interagir com a API e executar operações específicas. Cada rota geralmente está associada a uma função ou controlador no servidor que processa as solicitações dos clientes relacionadas a essa rota.
 
 <table>
   <tr>
