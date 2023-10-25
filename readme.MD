@@ -1,6 +1,6 @@
 # Projeto de Doação de Animais: Adote um Pet Online
 
-![img](/images/image_logo_readme.png)
+![img](/images/image_logo_readmes.png)
 
 ## Acesso preview ao site em desenvolvimento
 
