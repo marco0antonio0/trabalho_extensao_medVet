@@ -36,3 +36,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Justificativa
+
+- **Implantação Simplificada:** O Next.js facilitou o processo de deploy para os desenvolvedores, visto os recursos de enpacotamento e otimização integrados na ferramenta.
+
+- **Desenvolvimento Full-Stack:** A escolha pelo Next.js simplificou o desenvolvimento full-stack da aplicação, permitindo o desenvolvimento isolado do backend e do front end.
+
+- **Experiência Prévia com a Ferramenta:** Um dos principais motivos pela escolha do framework foi devido à experiência prévia dos desenvolvedores envolvidos com a ferramenta. 
+
+- **Comunidade Forte e Consistente:** Devido a popularidade do framework e a comunidade sólida e consistente, a facilidade para encontrar suporte para possíveis erros foi um dos fatores cruciais para a escolha do framework.
+
+O Next.js se demonstrou uma excelente escolha para o desenvolvimento do projeto, visto que ofereceu diversos recursos e vantagens para os desenvolvedores do projeto.
+
+
