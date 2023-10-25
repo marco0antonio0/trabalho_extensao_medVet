@@ -45,7 +45,11 @@ O quizz tem o objetivo de avaliar a afinidade do adotante em potencial com as ne
 
 ## Objetivo e Benefícios
 
-O objetivo principal do projeto é criar uma plataforma que facilite a adoção responsável de animais de estimação, garantindo que os adotantes compreendam as responsabilidades e os cuidados envolvidos na criação de um novo membro da família. Além disso, o projeto busca promover a educação sobre o bem-estar animal, oferecendo informações valiosas por meio do blog de aprendizado.
+O principal objetivo deste projeto é criar uma plataforma que torne a adoção responsável de animais de estimação mais acessível, ao mesmo tempo em que educa os adotantes sobre as responsabilidades e cuidados necessários para acolher um novo membro na família. Para atingir esse objetivo, a escolha da tecnologia desempenha um papel crucial. Foi adotada a ferramenta Next.js, uma estrutura de desenvolvimento JavaScript altamente sofisticada, reconhecida por sua eficiência e versatilidade.
+
+O Next.js simplifica significativamente o processo de implantação em serviços de nuvem PAAS (Platform as a Service), onde o arquivo Node é hospedado e o domínio é gerenciado com facilidade. Isso garante que a plataforma esteja sempre disponível e funcione de maneira eficiente, permitindo que os adotantes acessem as informações de forma rápida e confiável.
+
+Além disso, o Next.js se destaca na criação de uma API segura e bem estruturada. Ele oferece uma base sólida para a entrega de informações, garantindo que os dados sejam tratados com segurança e conformidade. Essa abordagem técnica sólida contribui para a qualidade e a segurança do projeto, proporcionando aos usuários uma experiência excepcional.
 
 ## Impacto Acadêmico e Parcerias
 
