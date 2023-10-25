@@ -1,38 +1,41 @@
 # Projeto de Doação de Animais: Adote um Pet Online
-## API - DOCS - Consulta e mecanismos de segurança
+## API - DOCS - Consulta e Mecanismos de Segurança
 
-![img](/images/image_logo_readmes.png)
+![Imagem](/images/image_logo_readmes.png)
 
-## Acesso preview ao site em desenvolvimento
+## Acesso ao Site em Desenvolvimento
 
-- [acesse clicando aqui](https://adote.nova-work.cloud/)
+- [Clique aqui para acessar o site em desenvolvimento](https://adote.nova-work.cloud/)
 
-## Acesso rapido
+## Acesso Rápido
 
-clique no topico que deseja acesso
+Escolha a seção que deseja acessar:
 
-- [todas etapas](/etapas_dev/readme.MD)
-  - [etapas 1](/etapas_dev/etapa_1/readme.MD)
-    - desc: levantamento de requisitos
-  - [etapas 2](/etapas_dev/etapa_2/readme.MD)
-    - desc: necessidades de cada tela
-  - [etapas 3](/etapas_dev/etapa_3/readme.MD)
-    - desc: desenvolver esboços e layouts das telas
-  - [etapas 4](/etapas_dev/etapa_4/readme.MD)
-    - desc: guia de preparação de ambiende de desenvolvimento
-  - [etapas 5](/etapas_dev/etapa_5/readme.MD)
-    - desc: desenvolver as telas necessariamente planejadas
-  - etapas 6
+- [Todas as Etapas](/etapas_dev/readme.MD)
+  - [Etapa 1](/etapas_dev/etapa_1/readme.MD)
+    - **Descrição:** Levantamento de requisitos
+  - [Etapa 2](/etapas_dev/etapa_2/readme.MD)
+    - **Descrição:** Levantamento das necessidades de cada tela
+  - [Etapa 3](/etapas_dev/etapa_3/readme.MD)
+    - **Descrição:** Desenvolvimento de esboços e layouts das telas
+  - [Etapa 4](/etapas_dev/etapa_4/readme.MD)
+    - **Descrição:** Guia de preparação do ambiente de desenvolvimento
+  - [Etapa 5](/etapas_dev/etapa_5/readme.MD)
+    - **Descrição:** Desenvolvimento das telas planejadas
+  - Etapa 6
     - Blog e Integração com Contato
-  - etapas 7 -- fase atual em andamento
+  - Etapa 7 (Fase Atual em Andamento)
     - Refinamento e Ajustes Finais
-  - etapas 8 -- fase atual em andamento
+  - Etapa 8 (Fase Atual em Andamento)
     - Prototipação de Alta Fidelidade
-  - etapas 9 -- _Proxima fase em espera_
-    - Polimento e Preparação para Lançamento
-    - Captação de parcerias como ONGs e Abrigos na região de belém do Pará
+  - Etapa 9 (Próxima Fase em Espera)
+    - Polimento e Preparação para o Lançamento
+    - Captação de parcerias com ONGs e Abrigos na região de Belém do Pará
 
-## Api-docs
+## API - Documentação
+
+A documentação a seguir descreve as rotas da API, fornecendo informações essenciais para interagir com os mecanismos de consulta e segurança do projeto.
+
 <table>
   <tr>
     <th>Nome da Rota</th>
@@ -43,27 +46,26 @@ clique no topico que deseja acesso
   <tr>
     <td>consulta-dados</td>
     <td>Exibe todos os animais listados que estão disponíveis para adoção.</td>
-    <td>Todos os dados dos animais que estão disponíveis para adoção.</td>
+    <td>Todos os dados dos animais disponíveis para adoção.</td>
     <td></td>
   </tr>
   <tr>
     <td>one-consulta-dados</td>
-    <td>Exibe apenas o animal especificado que está listado e disponível para adoção.</td>
-    <td>Apenas os dados do animal especificado.</td>
+    <td>Exibe apenas o animal específico disponível para adoção.</td>
+    <td>Dados do animal especificado.</td>
     <td></td>
   </tr>
   <tr>
     <td>one-consulta-dados-ong</td>
-    <td>Exibe apenas a ONG especificada que está listada e em guarda do pet.</td>
-    <td>Apenas os dados da ONG especificada.</td>
+    <td>Exibe apenas a ONG específica responsável pela guarda do pet.</td>
+    <td>Dados da ONG especificada.</td>
     <td></td>
   </tr>
 </table>
 
+Esta documentação fornece orientações claras sobre como utilizar as rotas da API, permitindo uma interação eficiente com os mecanismos de consulta e segurança relacionados à adoção de animais de estimação. Ela é essencial para o sucesso do projeto e sua missão de conectar animais de estimação a lares amorosos.
 
-
-
-## Justificativa
+## Justificativa do uso do framework **next.js**
 
 - **Implantação Simplificada:** O Next.js facilitou o processo de deploy para os desenvolvedores, visto os recursos de enpacotamento e otimização integrados na ferramenta.
 
