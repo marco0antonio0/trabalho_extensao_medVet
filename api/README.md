@@ -1,5 +1,5 @@
 # Projeto de Doação de Animais: Adote um Pet Online
-## API - Consulta e mecanismos de segurança
+## API - DOCS - Consulta e mecanismos de segurança
 
 ![img](/images/image_logo_readmes.png)
 
