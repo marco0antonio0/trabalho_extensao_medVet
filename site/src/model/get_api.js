@@ -12,5 +12,15 @@ const config_api = {
     });
   },
   //=============================================
+  getstatic: function (url) {
+    return new Promise((resolve, reject) => {
+      //=============================================
+      fetch(url)
+        .then((e) => e.json())
+        .then((e) => resolve(e))
+        .then((e) => reject("erro"));
+      //=============================================
+    });
+  },
 };
 export { config_api };

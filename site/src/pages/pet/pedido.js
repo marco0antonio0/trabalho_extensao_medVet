@@ -87,16 +87,26 @@ export default function Home() {
               {/* imagem ilustrativa */}
               <Widget_Banner url_image="/images/banneraprovado.svg" />
               {/*================================================= */}
-              {/* componente blog */}
+              {/* Componente TextoBlog - apresentando a pontuação obtida */}
+              <Widegt_Post_text
+                titulo={`Sua pontuação foi de ${dx}/10 pontos`}
+              />
+              {/*================================================= */}
+              {/* componente blog - textos */}
               <Widegt_Post_text
                 titulo={`Entre em contato com a ong ${data11.nome}`}
-                texto={`Ola ${ddd} parabens por ter passado no nosso quizz entre em contato com a ong responsavel pelo pet clicando no botão abaixo contato via whatsapp e informe o codigo ${data.id}-${data11.id}-${dddd} para completar sua adoção `}
+                texto={`Ola **${ddd}** parabens por ter passado no nosso **quizz** ,seu pedido ja foi recebido em nosso time de adoção, entre em contato com a ong responsavel pelo pet clicando no botão abaixo contato **via whatsapp** e **informe o codigo** para seguir para sua proxima etapa da adoção
+                
+- codigo ${data.id} 
+  -
+  
+`}
               />
               {/*================================================= */}
               {/* componente buttom */}
               <Widget_btn_person
                 numero={data11.telefone}
-                codigo={`${data.id}-${data11.id}-${dddd} `}
+                codigo={`${data.id} `}
                 nome_solicitante={ddd}
               />
               {/*================================================= */}

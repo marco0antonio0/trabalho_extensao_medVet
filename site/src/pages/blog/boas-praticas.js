@@ -33,7 +33,7 @@ export default function Home() {
             />
 
             {/** Imagem ilustrativa */}
-            <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" />
+            <Widget_Banner url_image="/images/bannerBoasPraticas1.png" />
 
             {/** Primeiro texto */}
             <Widegt_Post_text
@@ -51,7 +51,7 @@ Diante disso, nota-se a falta de preparo da maioria dos adotantes para receber u
             />
 
             {/** Imagem ilustrativa */}
-            <Widget_Banner url_image="/images/bannerImage_cats.png" />
+            <Widget_Banner url_image="/images/bannerBoasPraticas2.png" />
 
             {/** Terceiro texto */}
             <Widegt_Post_text

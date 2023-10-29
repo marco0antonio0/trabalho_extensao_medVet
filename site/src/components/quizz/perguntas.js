@@ -38,7 +38,7 @@ export const perguntas = [
       ],
       [
         "não concordo em arca com custos para o animal,irei dar comida apenas quando puder",
-        0.0,
+        -3.0,
       ],
     ],
     //=================================================================================================================
@@ -47,11 +47,10 @@ export const perguntas = [
     //=================================================================================================================
     pergunta:
       "Durante os primeiros dias do animal em sua residencial, oque voce acha correto se o animalzinho agir de formas imprevistas como latir excessivamente,arranhar móveis,fazer necessidades onde não deveria",
-    // "Você está ciente de que o animal é um ser irracional que durante o período de adaptação pode agir de formas imprevistas (arranhar móveis, latidos ou miados excessivos, soltura de pelos e fazer necessidades onde não deveria)?",
     opcoes: [
       [
         "irei bater no animal para educa-lo(a) porque é o correto a se fazer",
-        0.0,
+        -3.0,
       ],
       [
         "irei respirar fundo e  educa-lo(a) redirecionando para outras atividades",
@@ -66,7 +65,7 @@ export const perguntas = [
     pergunta:
       "Caso alguem proximo em sua residencia venha a ter uma alergia ao animal adotado ",
     opcoes: [
-      ["irei abandona-lo", 0.0],
+      ["irei abandona-lo", -5.0],
       [
         "irei ver a melhor possibilidade para o bem do animal devolvendo para ong/abrigo",
         0.0,

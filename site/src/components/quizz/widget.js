@@ -6,6 +6,8 @@ import { useRouter } from "next/router";
 import localFont from "next/font/local";
 import ReCAPTCHA from "react-google-recaptcha";
 import { perguntas } from "./perguntas";
+import { config_api } from "@/model/get_api";
+require("dotenv").config();
 const myFont_LilitaOne = localFont({
   src: "./../../fonts/LilitaOne-Regular.ttf",
   subsets: ["latin"],
@@ -19,6 +21,7 @@ const myFont_LondrinaSolid = localFont({
 // Função quiz
 export default function Widget_quizz({ data }) {
   const r = useRouter();
+  const [load, setload] = useState(false);
   const [res, setres] = useState([
     null,
     null,
@@ -165,84 +168,111 @@ export default function Widget_quizz({ data }) {
 
         {/*================================================= */}
         {/*       BTN >> enviar respostas */}
-        <div
-          className={style.btn_plus}
-          onClick={() => {
-            let pass = true;
-            var cont = 0.0;
-            try {
-              // ===================================================
-              // faz a verificação de pontos e coloca na VAR 'cont'
-              if (res.length > 0) {
-                res.map((e) => {
-                  if (
-                    e === typeof undefined ||
-                    e == "selecione" ||
-                    e === null
-                  ) {
-                    pass = false;
-                  } else {
-                    cont += parseInt(e);
-                  }
-                });
-              } else {
-                pass = false;
-              }
-
-              // ===================================================
-              // monitoramento de vars
-              // ===================================================
-              // seta o status true||false na vars 'erroCampos'
-              seterroCampos(!pass);
-              // seta o status true||false na vars 'erroNome'
-              if (nome.length < 3) {
-                seterroNome(true);
-              } else {
-                seterroNome(false);
-              }
-              // seta o status true||false na vars 'erroTelefone'
-              if (telefone.length < 7) {
-                seterroTelefone(true);
-              } else {
-                seterroTelefone(false);
-              }
-              // ===================================================
-              // =============================================================
-              //        verificação se campos validos >> nome e telefone e Recaptcha
-              if (
-                nome.length > 3 &&
-                telefone.length >= 7 &&
-                pass &&
-                erroRecaptcha
-              ) {
-                // =============================================================
-                //      verificação se pontos totais validos
-                if (cont < 6) {
-                  r.push(`/pet/pedido-resposta?dx=${cont}`);
+        {load ? (
+          <div className={style.container_cloader}>
+            <div className={style.cloader}></div>
+          </div>
+        ) : (
+          <div
+            className={style.btn_plus}
+            onClick={() => {
+              let pass = true;
+              var cont = 0.0;
+              try {
+                // ===================================================
+                // faz a verificação de pontos e coloca na VAR 'cont'
+                if (res.length > 0) {
+                  res.map((e) => {
+                    if (
+                      e === typeof undefined ||
+                      e == "selecione" ||
+                      e === null
+                    ) {
+                      pass = false;
+                    } else {
+                      cont += parseInt(e);
+                    }
+                  });
                 } else {
-                  r.push(
-                    `/pet/pedido?d=${data.id}&dd=${data.id_ong}&ddd=${nome}&dx=${cont}&dddd=${telefone}`
-                  );
+                  pass = false;
                 }
-              } else {
+
+                // ===================================================
+                // monitoramento de vars
+                // ===================================================
+                // seta o status true||false na vars 'erroCampos'
+                seterroCampos(!pass);
+                // seta o status true||false na vars 'erroNome'
+                if (nome.length < 3) {
+                  seterroNome(true);
+                } else {
+                  seterroNome(false);
+                }
+                // seta o status true||false na vars 'erroTelefone'
+                if (telefone.length < 7) {
+                  seterroTelefone(true);
+                } else {
+                  seterroTelefone(false);
+                }
+                // ===================================================
                 // =============================================================
-                //        caso a verificação se campos validos falhe >> nome e telefone
-                seterro(true);
+                //        verificação se campos validos >> nome e telefone e Recaptcha
+                if (
+                  nome.length > 3 &&
+                  telefone.length >= 7 &&
+                  pass &&
+                  erroRecaptcha
+                ) {
+                  // =============================================================
+                  //      verificação se pontos totais validos
+                  //      Executa uma chamada de url e api
+                  if (cont < 6) {
+                    setload(true);
+                    //=============================================================
+                    //     faz o get para rota "pontuar" registrando o pedido
+                    config_api
+                      .getstatic(
+                        `https://api-request.nova-work.cloud/api/pontuar?ia=${data.id}&n=${nome}&t=${telefone}&p=${cont}&io=${data.id_ong}&pass=HZ}2MhGJC`
+                      )
+                      .then((e) => {
+                        r.push(
+                          `/pet/pedido-resposta?dx=${cont < 0 ? 0 : cont}`
+                        );
+                      });
+                  } else {
+                    setload(true);
+                    //=============================================================
+                    //     faz o get para rota "pontuar" registrando o pedido
+                    config_api
+                      .getstatic(
+                        `https://api-request.nova-work.cloud/api/pontuar?ia=${data.id}&n=${nome}&t=${telefone}&p=${cont}&io=${data.id_ong}&pass=HZ}2MhGJC`
+                      )
+                      .then((e) => {
+                        r.push(
+                          `/pet/pedido?d=${data.id}&dd=${data.id_ong}&ddd=${nome}&dx=${cont}&dddd=${telefone}`
+                        );
+                      });
+                  }
+                } else {
+                  // =============================================================
+                  //        caso a verificação se campos validos falhe >> nome e telefone
+                  seterro(true);
+                }
+                // =============================================================
+              } catch (error) {
+                seterroCampos(true);
               }
-              // =============================================================
-            } catch (error) {
-              seterroCampos(true);
-            }
-          }}
-        >
-          <h3
-            style={{
-              fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
             }}
           >
-            envia respostas
-          </h3>
-        </div>
+            <h3
+              style={{
+                fontFamily: `${myFont_LilitaOne.style.fontFamily}, cursive`,
+              }}
+            >
+              envia respostas
+            </h3>
+          </div>
+        )}
       </div>
     </>
   );

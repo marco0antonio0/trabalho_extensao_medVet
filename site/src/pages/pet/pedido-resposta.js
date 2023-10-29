@@ -5,6 +5,7 @@ import Widget_Label_blog from "@/components/label_blog/widget";
 import Widegt_Post_text from "@/components/post_text/widget";
 import { useRouter } from "next/router";
 import { Widget_btn_person1 } from "@/components/widget_btn/widget";
+import Widget_Blogs_section from "@/components/section_blogs/widget";
 
 export default function Home() {
   const r = useRouter();
@@ -33,21 +34,40 @@ export default function Home() {
               desc={`Sua pontuação foi de ${dx} de 10 pontos `}
             />
             {/*================================================= */}
+            {/* Componente TextoBlog - apresentando a pontuação obtida */}
+            <Widegt_Post_text titulo={`Sua pontuação foi de ${dx}/10 pontos`} />
+            {/*================================================= */}
             {/* componente titulo Blog */}
             <Widegt_Post_text
               titulo={`Poxaaa as respostas que voce selecionou `}
-              texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
+              texto={`Adotar um animal de estimação é uma decisão importante, e é normal que algumas pessoas não tenham passado no nosso teste recente de adoção de animais. A boa notícia é que elas têm a oportunidade de tentar novamente! Sabemos que cuidar de um animal requer responsabilidade e conhecimento, e é por isso que sugerimos que **leiam** nossos blogs educacionais, como:
+
+- *"Boas Práticas e Bons Cuidados,"*
+    -
+- *"Cuide do Seu Peludinho"*
+    -
+- *"Dê Amor e Carinho."*
+    -
+Esses recursos estão repletos de informações valiosas que vão ajudá-los a aprender mais sobre como proporcionar os cuidados adequados a um animal de estimação e a se preparar para dar a eles todo o amor e atenção que merecem. Além disso, recomendamos que otimizem seus sites pessoais e blogs com estratégias de SEO para que mais pessoas possam encontrar essas informações essenciais na internet.
+
+`}
             />
             {/*================================================= */}
             {/* sessão estrutura mais a abaixo */}
             <Widegt_Post_text
-              titulo={`Leia nosso blog sobre cuidados basicos e tente novamente`}
-              texto={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero a tincidunt euismod. Aliquam iaculis eros hendrerit tellus ultricies, at commodo ante viverra. Nulla facilisi. Curabitur quis congue augue. Fusce dictum leo eget felis eleifend, a maximus tortor vulputate. Cras elementum nibh ut lacus mollis pretium. Vivamus sit amet elementum massa. Ut eleifend sem vitae gravida semper. Proin elit magna, dapibus non ornare ut, efficitur vitae urna. Nam et hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis arcu ligula, eu faucibus dolor convallis ut.`}
+              titulo={`Sempre aprendendo mais`}
+              texto="
+Acreditamos que o aprendizado contínuo e o cuidado são fundamentais para criar um lar feliz e saudável para um novo amiguinho de quatro patas. Portanto, incentivamos a todos os interessados a aproveitar essa oportunidade para se tornarem os melhores tutores possíveis para seus futuros companheiros peludos. Com o conhecimento e o carinho certos, podem construir uma relação incrível e duradoura com seus animais de estimação, proporcionando-lhes uma vida cheia de amor, alegria e bem-estar.
+"
             />
+            {/* sessão estrutura mais a abaixo */}
+            <Widegt_Post_text titulo={`Leia nosso blog  e tente novamente`} />
+
             {/*================================================= */}
             {/* sessão estrutura mais a abaixo */}
-            <Widget_btn_person1 />
+            {/* <Widget_btn_person1 /> */}
             {/*================================================= */}
+            <Widget_Blogs_section />
           </div>
           ){/*================================================= */}
           {/* sessão estrutura mais a abaixo */}
