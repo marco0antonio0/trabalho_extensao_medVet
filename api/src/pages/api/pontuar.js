@@ -22,18 +22,19 @@ export default async function handler(req, res) {
   try {
     // args url
     // ia -> id_animal
+    // io -> id_ong
     // n -> nome
     // t -> telefone
     // p -> pontos
     // x -> data
     // y -> horario
-    const { ia, n, t, p, pass } = req.query;
+    const { ia, io, n, t, p, pass } = req.query;
     await db.connect();
-    if (ia && n && t && p && pass == process.env.PASS) {
+    if (ia && n && t && p && io && pass == process.env.PASS) {
       let x = getDateInBelem();
       let y = getTimeInBelem();
       await db.query(
-        `INSERT INTO tabela_formulario ( id_animal, nome, telefone, pontos,data,horario) VALUES ( ${ia}, "${n}", "${t}", ${p},"${x}","${y}")`
+        `INSERT INTO tabela_formulario ( id_animal, nome, telefone, pontos,data,horario,id_ong) VALUES ( ${ia}, "${n}", "${t}", ${p},"${x}","${y}",${io})`
       );
       res.status(200).json({ data: true });
     } else {
