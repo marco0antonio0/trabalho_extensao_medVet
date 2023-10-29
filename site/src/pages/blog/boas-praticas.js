@@ -27,27 +27,26 @@ export default function Home() {
           {/** Div principal */}
           <div className="sessao_1">
             {/* titulo do blog */}
-            <Widget_Label_blog titulo="PASSEAR É MUITO BOM PARA OS ANIMAIS" />
+            <Widget_Label_blog
+              titulo="BOAS PRATICAS BONS CUIDADOS"
+              desc="POSTADO POR NEAVET,EM OUT 28, 2023"
+            />
+
             {/** Imagem ilustrativa */}
             <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" />
 
             {/** Primeiro texto */}
             <Widegt_Post_text
               titulo="Falando sobre os animais"
-              texto={`Passeios ao ar livre não são apenas uma atividade agradável para os donos de animais de estimação e seus companheiros peludos, mas também desempenham um papel fundamental na saúde e felicidade dos animais. Neste blog, vamos explorar a importância dos passeios para os animais de estimação e como eles beneficiam nossos amigos de quatro patas.`}
+              texto={`Ao realizar a adoção de um novo animal, é necessário preparações em diversos âmbitos, sendo esses financeiros e emocionais, além de ter que lidar com a adaptação de espaço e nova rotina que este irá trazer à sua nova residência. A adoção é um compromisso a longo prazo, tendo em vista que cães e gatos podem viver por quase 20 anos de idade e o novo tutor tem obrigações para com este pelo resto de sua vida (SCHERER, 2021).
+Diante disso, nota-se a falta de preparo da maioria dos adotantes para receber um novo animal, o que muitas vezes leva ao abandono e maus tratos causando problemas sociais e ambientais (SCHERER, 2021).
+`}
             />
 
             {/** Segundo texto */}
             <Widegt_Post_text
-              titulo="Exercício para o Corpo e a Mente"
-              texto={`
-Os passeios diários proporcionam aos animais de estimação a oportunidade de se exercitar fisicamente e mentalmente, o que é essencial para seu bem-estar. Aqui estão alguns pontos importantes:
-
-- **Atividade física:** Os passeios oferecem uma forma de exercício regular que ajuda a manter os músculos, ossos e articulações de seu animal de estimação saudáveis. Isso é particularmente importante para cães, pois eles precisam de atividade física para gastar energia.
-
-- **Estímulo mental:** Durante os passeios, os animais de estimação são expostos a novos cheiros, sons e ambientes, o que estimula sua mente. Isso é especialmente relevante para cães e gatos, que se beneficiam da exploração e do enriquecimento ambiental.
-
-- **Vínculo entre dono e pet:** Passear com seu animal de estimação fortalece o vínculo entre vocês, criando momentos de qualidade e compartilhando experiências juntos.
+              titulo="Criação dentro de casa."
+              texto={`Para uma guarda responsável, certas medidas são necessárias para assegurar uma qualidade de vida para o animal. Entre elas, destaca-se a importância de criar um ambiente adequado onde o animal poderá viver de forma segura e confortável, minimizando os riscos de acidentes, transmissão ou aquisição de doenças (SOUZA, 2003). Para isso, é fundamental que a residência do tutor possua grades ou telas para impedir que o animal tenha acesso à rua, visto que através da interação com outros animais pode ocorrer a transmissão de doenças infecciosas graves, incluindo zoonoses que apresentam grande risco para a saúde pública. Além disso, riscos de atropelamentos, brigas ou maus-tratos por parte de terceiros são frequentemente maiores aos animais que transitam em vias públicas (ASPIS, 2006).
 `}
             />
 
@@ -56,20 +55,22 @@ Os passeios diários proporcionam aos animais de estimação a oportunidade de s
 
             {/** Terceiro texto */}
             <Widegt_Post_text
-              titulo="Redução do Estresse e Comportamento Adequado"
-              texto={`Além do exercício, os passeios desempenham um papel fundamental na redução do estresse e no desenvolvimento de comportamentos apropriados em animais de estimação. Aqui estão alguns pontos a serem considerados:
-- **Redução de estresse:** Animais de estimação que têm a oportunidade de passear regularmente costumam ser menos estressados e ansiosos. O contato com a natureza e o ar livre proporciona relaxamento e tranquilidade.
-
-- **Socialização:** Passeios oferecem a chance de socializar com outros animais de estimação e pessoas. Isso ajuda a reduzir a agressividade ou o medo em relação a estranhos.
-
-- **Prevenção de comportamentos indesejados:** Animais que passeiam regularmente estão menos propensos a desenvolver comportamentos destrutivos, como roer móveis ou cavar buracos no jardim. O exercício e a estimulação mental os mantêm ocupados e satisfeitos.
-
+              titulo="Período de adaptação do animal ao novo ambiente."
+              texto={` A adaptação dos pets ao novo lar é um processo complexo que envolve uma série de desafios físicos e emocionais. O estresse inicial é comum em animais recém-adotados, muitas vezes manifestando-se por meio de comportamentos como ansiedade, agressão ou reclusão (ZAWISTOWSKI et al 1998). Quando um animal de estimação é adotado, ele frequentemente enfrenta situações estressantes devido à mudança de ambiente, rotina e interações sociais, visto isso, é de suma importância que o novo tutor tenha ciência de que é um processo longo. Estudos comportamentais, destacam a importância do uso de técnicas como o reforço positivo, paciência e consistência por parte dos adotantes para estabelecer a confiança e segurança necessárias para o animal se sentir confortável em seu novo lar (GAZZANO et al. 2008). `}
+            />
+            {/** Quarto texto */}
+            <Widegt_Post_text
+              titulo="Enriquecimento ambiental."
+              texto={`O enriquecimento ambiental é de extrema importância para a saúde e bem-estar do seu animal. De acordo com Trentin (2019), este proporciona ao animal atividades que ocupam o seu dia, tirando-o da rotina e aproximando de seu habitat natural. O principal objetivo de implementar alguns tipos de enriquecimento é estimular o desenvolvimento de habilidades, diminuir o estresse e ansiedade, contribuir para o gasto de energia física e mental, ajudar na interação com outros indivíduos e reforçar a relação animal-tutor. Dessa forma, é necessário estipular um objetivo ou comportamento a ser contemplado e ter em mente que o animal deve ter a opção de querer realizá-lo, portanto as atividades/brinquedos não devem ser algo que o cão deve obrigatoriamente interagir. Por fim, o enriquecimento ambiental tem papel também de estimulá-lo de forma física, sensorial, social, alimentar e/ou cognitivo. (ASSIS, 20—).
+              
+AUTORES:
 \\
-fontes:
-\\
-[LoremIpsum]()\\
-[LoremIpsum]()
-`}
+[Núcleo de Estudos
+Aplicados à Medicina Veterinária -
+NEAVET]()\
+
+              
+              `}
             />
             {/** Sessão do blog educacional */}
             <Widget_Blogs_section />

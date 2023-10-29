@@ -27,26 +27,25 @@ export default function Home() {
           {/** Div principal */}
           <div className="sessao_1">
             {/* titulo do blog */}
-            <Widget_Label_blog titulo="CUIDE DO SEU PELUDINHO" />
+            <Widget_Label_blog
+              titulo="CUIDE DO SEU PELUDINHO"
+              desc="POSTADO POR NEAVET,EM OUT 28, 2023"
+            />
+
             {/** Imagem ilustrativa */}
             <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" />
 
             {/** Primeiro texto */}
             <Widegt_Post_text
-              titulo="Falando sobre os animais"
-              texto={`A relação entre humanos e animais de estimação é repleta de amor e alegria. No entanto, cuidar desses amigos peludos pode parecer um desafio, especialmente para aqueles que são novos nesse mundo. Neste guia, vamos explorar algumas dicas simples e acessíveis para que todos possam garantir que seus animais de estimação sejam felizes e saudáveis.`}
+              titulo="Para ficar esperto nas informações"
+              texto={`O desenvolvimento do conteúdo foi baseado em artigos científicos que relatam a importância da adoção responsável e como realizá-la, abordando diversos tópicos sobre o assunto como gastos, importância do médico veterinário e cuidados básicos a se ter com um novo animal. O blog servirá como guia para aqueles que desejam adotar caso o futuro tutor falhe nas perguntas propostas no início do processo de adoção.`}
             />
 
             {/** Segundo texto */}
             <Widegt_Post_text
-              titulo="Alimentação adequada é importante"
-              texto={`Cuidar da nutrição do seu animal de estimação é fundamental para sua saúde e felicidade. Aqui estão algumas dicas simples:
-
-- Ao escolher a comida do seu animal de estimação, leve em consideração fatores como idade, raça e tamanho. Alguns pets têm necessidades dietéticas específicas.
-
-- Evite dar a eles alimentos perigosos, como chocolate, uvas, cebolas e álcool, que podem causar sérios problemas de saúde.
-
-- Mantenha uma dieta equilibrada e siga as orientações do pacote para evitar que seu animal de estimação coma demais ou de menos.
+              titulo="Importância do médico veterinário."
+              texto={`A ida regular ao veterinário é muito importante para garantir o bem-estar do animal, sendo assim o médico veterinário realiza exames, vacinações e verificações que ajudam a prevenir doenças e a detectar problemas de saúde precocemente. Além disso, proporciona orientações sobre cuidados adequados, nutrição e comportamento, contribuindo para uma vida mais saudável para o animal de estimação. Os médicos veterinários instruem os tutores sobre como manejar o animal, seus cuidados básicos e saúde (TATIBANA; DA COSTA-VAL,
+2009).
 `}
             />
 
@@ -55,26 +54,59 @@ export default function Home() {
 
             {/** Terceiro texto */}
             <Widegt_Post_text
-              titulo="Praticar exercicios é otimos para todos"
-              texto={`
-Assim como nós, animais de estimação precisam de exercícios regulares e estimulação mental. Aqui estão algumas maneiras de manter seus amigos peludos ativos:
+              titulo="Importância da Vacinação"
+              texto={`Ter um animal de estimação é uma grande responsabilidade e requer cuidados especiais para garantir a saúde deles. A vacinação desempenha um papel fundamental nesse cuidado, pois ajuda a proteger seu pet contra doenças infecciosas (ALEXANDRINO, 2012). Além disso, ela evita a transmissão dessas doenças de um animal para outro, incluindo a possibilidade de contágio para os seres humanos. As vacinas devem ser realizadas anualmente e ser administradas por um veterinário (ALEXANDRINO, 2012).
 
-- Passeios diários são importantes para cães, permitindo que eles gastem energia e socializem com outros pets e pessoas.
+# Quais Vacinas Meu Pet Precisa?
 
-- Brincadeiras e brinquedos, como bolinhas, cordas e jogos interativos, são ótimas maneiras de manter seu pet estimulado.
+# Vacinação Para Cães
 
-- Dedique tempo de qualidade a seu animal de estimação, seja brincando, acariciando ou treinando. Isso fortalecerá o vínculo entre vocês.`}
+A primeira vacina e uma das mais importantes é a polivalente, que pode ser a V8 ou a V10, que protegem contra as seguintes doenças:
+
+- Cinomose
+
+- Parvovirose
+
+- Coronavirose
+
+- Hepatite infecciosa Canina
+
+- Adenovírus tipo 2
+
+- Parainfluenza
+
+- Leptospirose
+
+Outras vacinas recomendadas incluem giardia, gripe canina e leishmaniose, dependendo da região onde o pet vive.
+
+# Vacinação para Gatos
+
+Para gatos, há três opções de vacinas: V3, V4 e V5 que protegem contra:
+- V3: panleucopenia, calicivirose e rinotraqueíte.
+
+- V4: mesmas da V3 mais clamidiose.
+
+- V5: mesmas da V4 mais FELV.
+
+# Vacina Antirrábica
+
+A vacina antirrábica é obrigatória tanto para cães quanto para gatos e deve ser repetida anualmente.`}
             />
+
             {/** Quarto texto */}
             <Widegt_Post_text
-              titulo="Cuidados de Saúde Preventiva: Prevenindo Problemas Futuros"
-              texto={`Manter a saúde do seu pet em dia é fundamental. Aqui estão algumas medidas preventivas:
+              titulo="Importância da castração."
+              texto={`A castração é um procedimento cirúrgico que remove o útero em fêmeas e retira testículos em machos (OLIVINDO et al., 2021). Sua maior vantagem é a prevenção de que a fêmea entre constantemente no cio, além de prevenir diversos tipos de patologias tanto para o macho quanto para a fêmea (SILVA et al., 2015). A castração é um ato de amor, que evita uma reprodução desordenada dos animais de estimação, diminuindo os níveis de animais abandonados e nas ruas, além de diminuir a disseminação de doenças (CAMPBELL et al., 2020).
 
-- Mantenha as vacinas atualizadas de acordo com as recomendações do veterinário para proteger seu pet contra doenças graves.
 
-- Leve seu animal de estimação ao veterinário pelo menos uma vez por ano para exames de rotina e cuidados preventivos.
+AUTORES:
+\\
+[Núcleo de Estudos
+Aplicados à Medicina Veterinária -
+NEAVET]()\
 
-- Utilize produtos recomendados para manter pulgas, carrapatos e vermes afastados de seu animal de estimação.
+              
+
 `}
             />
             {/** Sessão do blog educacional */}

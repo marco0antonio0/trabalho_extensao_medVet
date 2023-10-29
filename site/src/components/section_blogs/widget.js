@@ -37,17 +37,17 @@ export default function Widget_Blogs_section() {
   // ==============================================================
   // const Blogs = [
   //   {
-  //     titulo: "PASSEAR TAMBEM É BOM PRA ELES",
+  //     titulo: "BOAS PRATICAS BONS CUIDADOS",
   //     img: '"/images/imageBlog_1.png',
   //     url_push: "/blog/boas-praticas",
   //   },
   //   {
-  //     titulo: "PASSEAR TAMBEM É BOM PRA ELES",
+  //     titulo: "BOAS PRATICAS BONS CUIDADOS",
   //     img: '"/images/imageBlog_1.png',
   //     url_push: "/blog/boas-praticas",
   //   },
   //   {
-  //     titulo: "PASSEAR TAMBEM É BOM PRA ELES",
+  //     titulo: "BOAS PRATICAS BONS CUIDADOS",
   //     img: '"/images/imageBlog_1.png',
   //     url_push: "/blog/boas-praticas",
   //   },
@@ -75,7 +75,7 @@ export default function Widget_Blogs_section() {
             {/** Desclaração da função intem card */}
             <ItemCards
               url_image="/images/imageBlog_1.png"
-              titulo="PASSEAR TAMBEM É BOM PRA ELES"
+              titulo="BOAS PRATICAS BONS CUIDADOS"
             />
           </div>
           {/*============================================== */}

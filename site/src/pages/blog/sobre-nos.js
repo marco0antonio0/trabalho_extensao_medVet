@@ -89,7 +89,30 @@ O projeto _"Adote um Pet Online"_ é uma iniciativa inovadora que visa unir pess
 - @Manoel Victor
     -
 - @Renan Tavares
-    -        `}
+    -
+    
+
+
+    
+## Núcleo de Estudos Aplicados à Medicina Veterinária - NEAVET
+
+- @ANNA THEREZA FELIZ FURTADO
+  -
+- @CAROLINE DA SILVA GOMES
+  -
+- @ÉRIKA KAMYLA NOGUEIRA RANIÉRI
+  -
+- @GISELLA ALVES DA SILVA
+  -
+- @MARIANA LEITE MOREIRA
+  -
+- @JULIANA DA COSTA COSTA
+  -
+- @SAMY SUELLEN CARVALHO DELGADO
+  -
+
+  
+    `}
             />
 
             {/** Sessão do blog educacional */}

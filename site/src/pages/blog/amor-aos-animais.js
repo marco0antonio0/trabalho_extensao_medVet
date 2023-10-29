@@ -27,7 +27,10 @@ export default function Home() {
           {/** Div principal */}
           <div className="sessao_1">
             {/* titulo do blog */}
-            <Widget_Label_blog titulo="De amor e carinho" />
+            <Widget_Label_blog
+              titulo="De amor e carinho"
+              desc="POSTADO POR NEAVET,EM OUT 28, 2023"
+            />
 
             {/* iamgem ilustrativa blog */}
             <Widget_Banner url_image="/images/bannerImage_passeando_com_pets.png" />
@@ -35,14 +38,15 @@ export default function Home() {
             {/* Primeiro texto */}
             <Widegt_Post_text
               titulo="O Poder do Amor e Carinho: Cuidando dos Nossos Pets"
-              texto={`Os animais de estimação têm um lugar especial em nossos corações. Eles não são apenas companheiros leais, mas também membros da família. Muitos de nós já sabem o quão maravilhoso é compartilhar a vida com um animal de estimação, mas é importante relembrar a importância de dar amor e carinho a eles. Neste blog, exploraremos por que o afeto é essencial para o bem-estar de nossos pets.
+              texto={`Ao realizar a adoção de um novo animal, é necessário preparações em diversos sentidos, sendo esses financeiros e emocionais, além de ter que lidar com a adaptação de espaço e nova rotina que este irá trazer à sua nova residência. A adoção é um compromisso a longo prazo, tendo em vista que cães e gatos podem viver por quase 20 anos de idade e o novo tutor tem obrigações para com este pelo resto de sua vida (SCHERER, 2021).
+Diante disso, nota-se a falta de preparo da maioria dos adotantes para receber um novo animal, o que muitas vezes leva ao abandono e maus tratos causando problemas sociais e ambientais (SCHERER, 2021).
 `}
             />
 
             {/* Segundo Texto */}
             <Widegt_Post_text
-              titulo="Fortalece o Vínculo com Nossos Pets"
-              texto={`Assim como nós, os animais de estimação também anseiam por conexão emocional. Quando passamos tempo acariciando, brincando e conversando com nossos pets, estamos fortalecendo o vínculo entre nós e eles. Essa conexão é o que torna a relação com nossos amigos peludos tão especial.
+              titulo="O que é adoção responsável?"
+              texto={` A adoção responsável é um ato de amor que envolve cuidar, respeitar e suprir as necessidades do animal escolhido para levar para o seu lar. O processo de adoção implica diretamente na rotina da família, portanto, deve ser feito unicamente quando o adotante tem a certeza de que está preparado para recepcionar adequadamente o pet, sabendo que este tem custos, demanda atenção e será 100% dependente de seu tutor, necessitando que ele compreenda também seus comportamentos naturais, como mordidas, arranhões, latidos (no caso de cachorros) e etc (MANGILI, 2022).
 `}
             />
 
@@ -51,28 +55,16 @@ export default function Home() {
 
             {/* Terceiro texto */}
             <Widegt_Post_text
-              titulo="Ajuda a Fortalecer Saúde Mental e Emocional"
-              texto={`O amor e o carinho que damos aos nossos pets têm um impacto positivo em sua saúde mental e emocional. Eles se sentem seguros, amados e valorizados, o que ajuda a reduzir o estresse e a ansiedade em suas vidas. Animais de estimação que recebem afeto regularmente são geralmente mais felizes e confiantes.`}
-            />
-            <Widegt_Post_text
-              titulo="Promove o Comportamento Positivo"
-              texto={`Quando demonstramos amor e carinho, nossos pets são mais propensos a mostrar comportamentos positivos. Eles são mais obedientes, carinhosos e menos propensos a agir de maneira destrutiva. O afeto é uma ferramenta poderosa para educar e criar um ambiente positivo em casa.`}
-            />
-            <Widegt_Post_text
-              titulo="Formas de Mostrar Afeto"
-              texto={`
-- **Acariciando e Mimando:** Nada supera o poder de um bom carinho. A maioria dos animais de estimação adora receber carinho e atenção. Passar um tempo acariciando e mimando seu pet é uma maneira simples, mas significativa, de mostrar amor.
+              titulo="Custos financeiros que o animal pode trazer ao tutor"
+              texto={` Ter um cão ou um gato em sua nova rotina pode ser uma experiência extremamente positiva em diversos aspectos, porém também significa que haverá gastos regulares, sendo necessário um adequado planejamento para tal. Dessa forma, é importante levar em consideração fatores como alimentação, idas ao veterinário, banho, tosa, vacinação, vermifugação, brinquedos, petiscos e etc (GOMES, 2013). Os animais vivem muitos anos e é necessário manter o compromisso com sua vida durante todo esse período, por esse motivo, é importante se perguntar “Atualmente, possuo condições financeiras para adotar um animal?”. Uma boa prática para evitar problemas é ter um fundo de emergência, sempre mantendo a responsabilidade financeira e garantindo a saúde física e mental do seu novo companheiro.
 
-- **Tempo de Qualidade:** Reserve um tempo específico para brincar, passear e interagir com seu pet. Isso demonstra que você valoriza sua companhia e está disposto a investir tempo de qualidade com ele.
-
-- **Comunicação e Compreensão:** Embora nossos pets não falem a mesma língua que nós, eles ainda respondem à nossa comunicação. Fale com eles, faça contato visual e tente entender suas necessidades e emoções.
-
+AUTORES:
 \\
-fontes:
-\\
-[LoremIpsum]()\\
-[LoremIpsum]()
-`}
+[Núcleo de Estudos
+Aplicados à Medicina Veterinária -
+NEAVET]()\
+
+              `}
             />
 
             {/**Sessão do blog educacional   */}
