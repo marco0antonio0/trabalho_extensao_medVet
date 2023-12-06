@@ -17,7 +17,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
+
+        <meta
+          name="keywords"
+          content="me adote Belém, adoção de animais em Belém, adotar cachorro em Belém, adotar gato em Belém, projeto de extensão adoção de animais em Belém"
+        />
+        <meta name="robots" content="index, follow" />
       </Head>
+
       <div className="colunm1">
         <Widget_topBar />
         <div className="colunm">
