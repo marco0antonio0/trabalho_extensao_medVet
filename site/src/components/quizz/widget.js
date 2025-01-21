@@ -218,7 +218,7 @@ export default function Widget_quizz({ data }) {
                     //     faz o get para rota "pontuar" registrando o pedido
                     config_api
                       .getstatic(
-                        `https://api-request.nova-work.cloud/api/pontuar?ia=${data.id}&n=${nome}&t=${telefone}&p=${cont}&io=${data.id_ong}&pass=HZ}2MhGJC`
+                        `https://api-meadote.netlify.app/api/pontuar?ia=${data.id}&n=${nome}&t=${telefone}&p=${cont}&io=${data.id_ong}&pass=HZ}2MhGJC`
                       )
                       .then((e) => {
                         r.push(
@@ -231,7 +231,7 @@ export default function Widget_quizz({ data }) {
                     //     faz o get para rota "pontuar" registrando o pedido
                     config_api
                       .getstatic(
-                        `https://api-request.nova-work.cloud/api/pontuar?ia=${data.id}&n=${nome}&t=${telefone}&p=${cont}&io=${data.id_ong}&pass=HZ}2MhGJC`
+                        `https://api-meadote.netlify.app/api/pontuar?ia=${data.id}&n=${nome}&t=${telefone}&p=${cont}&io=${data.id_ong}&pass=HZ}2MhGJC`
                       )
                       .then((e) => {
                         r.push(
