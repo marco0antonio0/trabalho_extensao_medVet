@@ -40,7 +40,6 @@ export default function Widget_quizz({ data }) {
   const [erroTelefone, seterroTelefone] = useState(false);
   const [erroNome, seterroNome] = useState(false);
   const [erroCampos, seterroCampos] = useState(false);
-  const [erroRecaptcha, seterroRecaptcha] = useState(false);
   const type_erros = {
     erroGererico: ">> Preencha todos os campos",
     erroCampoNome: ">> Campo 'Qual seu nome' não preenchido ou incompleto",
@@ -125,19 +124,7 @@ export default function Widget_quizz({ data }) {
             </div>
           );
         })}
-        {/*================================================= */}
-        {/*       Recaptcha div */}
-        <div className={style.generic_container}>
-          <div className={style.ReCAPTCHADiv}>
-            {/*       Recaptcha elements */}
-            <ReCAPTCHA
-              sitekey="6LfCsLwoAAAAANDpSjLX3be4Mfclgmwi3qT9f3jh"
-              onChange={(e) => {
-                seterroRecaptcha(e);
-              }}
-            />
-          </div>
-        </div>
+        
         {/*================================================= */}
         <div className={style.generic_container}>
           {/*================================================= */}
@@ -220,8 +207,7 @@ export default function Widget_quizz({ data }) {
                 if (
                   nome.length > 3 &&
                   telefone.length >= 7 &&
-                  pass &&
-                  erroRecaptcha
+                  pass 
                 ) {
                   // =============================================================
                   //      verificação se pontos totais validos
