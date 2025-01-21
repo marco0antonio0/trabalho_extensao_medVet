@@ -1,6 +1,6 @@
 // faz a requisição da API
 const config_api = {
-  fix_url: "https://api-request.nova-work.cloud",
+  fix_url: "https://api-meadote.netlify.app",
   get: function (url) {
     return new Promise((resolve, reject) => {
       //=============================================
